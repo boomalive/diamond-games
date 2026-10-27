@@ -1,0 +1,12 @@
+@font-face{font-family:Manrope;src:url('{{asset:Manrope.ttf}}') format('truetype');font-weight:200 800;font-display:swap}
+*{box-sizing:border-box}html,body{margin:0;background:#fff;font-family:Manrope,Arial,sans-serif;color:#262626}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:2px solid #6c969c;outline-offset:4px}[hidden]{display:none!important}
+.game{position:relative;width:375px;height:672px;overflow:hidden;background:#fff;isolation:isolate;user-select:none;-webkit-user-select:none}
+.header{position:absolute;inset:0 0 auto;height:56px;display:flex;align-items:center;justify-content:space-between;padding:16px 16px 8px}.back{width:65px;height:32px;display:flex;align-items:center;padding:0;background:none;border:0}.back img,.logo{display:block;flex:none}.step{width:65px;text-align:center;color:#9aa5a8;font-size:13px;line-height:16px;white-space:nowrap}
+.copy{position:absolute;left:16px;top:80px;width:345px}.copy h1{margin:0 0 16px;font-size:18px;line-height:22px;letter-spacing:-.32px;font-weight:600;text-transform:uppercase;color:#002d38;white-space:pre-line}.copy p{margin:0;width:332px;font-size:14px;line-height:17px;font-weight:400}
+.play-area{position:absolute;left:0;top:204px;width:375px;height:340px;background:#fff;overflow:hidden}
+.ring-frame{display:block;width:100%;max-width:375px;height:100%;aspect-ratio:375/340;border:0;background:#fff}
+.prompt{position:absolute;left:74px;top:563px;width:226px;min-height:34px;padding:10px 12px;color:#5a5b5cb8;text-align:center;font-size:12px;line-height:14px;font-weight:400;white-space:pre-line}
+.progress{position:absolute;left:60px;top:640px;width:255px;height:2px;background:#edf0f1;overflow:hidden}.progress span{display:block;width:0;height:2px;background:#002d38}
+.next{position:absolute;left:16px;top:612px;width:343px;height:44px;border:0;background:#002d38;color:#fff;font-size:12px;font-weight:600;letter-spacing:.12px;text-transform:uppercase}.next:hover{background:#104551}
+.game[data-state="complete"] .copy{top:84px}.game[data-state="complete"] h1{width:248px;margin:0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "LR2882BR01",
+    "label": "LR2882BR01",
+    "module": "./ring-setting/LR2882BR01/index.html"
+  },
+  {
+    "id": "LR2981BR01",
+    "label": "LR2981BR01",
+    "module": "./ring-setting/LR2981BR01/index.html"
+  },
+  {
+    "id": "LR2906BR01",
+    "label": "LR2906BR01",
+    "module": "./ring-setting/LR2906BR01/index.html"
+  },
+  {
+    "id": "LR5600BR01",
+    "label": "LR5600BR01",
+    "module": "./ring-setting/LR5600BR01/index.html"
+  },
+  {
+    "id": "LR2882PR01",
+    "label": "LR2882PR01",
+    "module": "./ring-setting/LR2882PR01/index.html"
+  },
+  {
+    "id": "LR2981PR01",
+    "label": "LR2981PR01",
+    "module": "./ring-setting/LR2981PR01/index.html"
+  },
+  {
+    "id": "LR2906PR01",
+    "label": "LR2906PR01",
+    "module": "./ring-setting/LR2906PR01/index.html"
+  },
+  {
+    "id": "LR2411PR01",
+    "label": "LR2411PR01",
+    "module": "./ring-setting/LR2411PR01/index.html"
+  },
+  {
+    "id": "LR2882OV01",
+    "label": "LR2882OV01",
+    "module": "./ring-setting/LR2882OV01/index.html"
+  },
+  {
+    "id": "LR2981OV01",
+    "label": "LR2981OV01",
+    "module": "./ring-setting/LR2981OV01/index.html"
+  },
+  {
+    "id": "LR2082OV01",
+    "label": "LR2082OV01",
+    "module": "./ring-setting/LR2082OV01/index.html"
+  },
+  {
+    "id": "LR2882EM01",
+    "label": "LR2882EM01",
+    "module": "./ring-setting/LR2882EM01/index.html"
+  },
+  {
+    "id": "LR2981EM01",
+    "label": "LR2981EM01",
+    "module": "./ring-setting/LR2981EM01/index.html"
+  },
+  {
+    "id": "LR2906EM01",
+    "label": "LR2906EM01",
+    "module": "./ring-setting/LR2906EM01/index.html"
+  },
+  {
+    "id": "LR3041EM01",
+    "label": "LR3041EM01",
+    "module": "./ring-setting/LR3041EM01/index.html"
+  },
+  {
+    "id": "LR0211OV01",
+    "label": "LR0211OV01",
+    "module": "./ring-setting/LR0211OV01/index.html"
+  }
+]

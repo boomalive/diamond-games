@@ -1,0 +1,19 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet"><meta name="referrer" content="no-referrer"><link rel="icon" href="data:,"><title>Diamond Games</title><style>/* {{styles}} */</style></head><body>
+<main class="suite" aria-label="Игры с алмазом">
+ <div class="screen-space" id="screen-space">
+  <section id="panel-mining" role="tabpanel" aria-labelledby="tab-mining" class="panel"><iframe id="frame-mining" title="Добыча алмаза" allow="autoplay; fullscreen"></iframe></section>
+  <section id="panel-polish" role="tabpanel" aria-labelledby="tab-polish" class="panel" hidden><iframe id="frame-polish" title="Огранка алмаза" allow="autoplay"></iframe></section>
+  <section id="panel-setting" role="tabpanel" aria-labelledby="tab-setting" class="panel" hidden><iframe id="frame-setting" title="Вставка алмаза в кольцо" allow="autoplay; fullscreen"></iframe></section>
+ </div>
+ <nav class="game-tabs" id="game-tabs" role="tablist" aria-label="Выбор игры">
+  <button id="tab-mining" type="button" role="tab" aria-selected="true" aria-controls="panel-mining"><span>01</span>Добыча</button>
+  <button id="tab-polish" type="button" role="tab" aria-selected="false" aria-controls="panel-polish" tabindex="-1"><span>02</span>Огранка</button>
+  <button id="tab-setting" type="button" role="tab" aria-selected="false" aria-controls="panel-setting" tabindex="-1"><span>03</span>Вставка</button>
+ </nav>
+ <div class="admin-space"><aside class="admin" id="admin" aria-label="Просмотр прототипа"><span class="admin-label">Просмотр</span>
+  <div id="mining-controls" class="admin-group"><button id="mining-reset" type="button" title="Начать добычу заново">↻ Сброс</button><button id="mining-sound" type="button" aria-pressed="false" title="Включить звук удара">♪ Звук выкл.</button></div>
+  <div id="polish-controls" class="admin-group" hidden><label for="shape">Форма</label><select id="shape" title="Выбор формы для просмотра. Меняет форму и начинает огранку заново."><option value="round">Круг</option><option value="oval">Овал</option><option value="square">Квадрат</option><option value="rectangle">Прямоугольник</option></select><button id="demo" type="button" title="Автоматически показать все три этапа огранки">Демо</button><button id="reset" type="button" aria-label="Сбросить огранку" title="Сбросить огранку">↻</button></div>
+  <div id="setting-controls" class="admin-group" hidden><label for="ring">Кольцо</label><select id="ring" title="Выбор кольца. Начинает установку выбранного бриллианта заново.">{{ring-options}}</select><button id="setting-reset" type="button" title="Начать установку заново">↻ Сброс</button></div>
+ </aside></div>
+ <p class="sr-only" id="announcement" aria-live="polite"></p>
+</main><script type="application/json" id="games-data">{{games-data}}</script><script>/* {{suite}} */</script></body></html>

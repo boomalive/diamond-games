@@ -1,0 +1,68 @@
+{
+  "initial": {
+    "requests": [
+      "",
+      "assets/common/Manrope.ttf",
+      "mining.html",
+      "assets/common/chevron.svg",
+      "assets/common/logo.svg",
+      "assets/common/shadow.svg",
+      "assets/mining/stone-1.webp",
+      "assets/mining/stone-2.webp",
+      "assets/mining/stone-3.webp",
+      "assets/mining/stone-4.webp",
+      "assets/mining/stone-5.webp",
+      "assets/common/pickaxe.png",
+      "assets/common/lottie.min.js",
+      "assets/common/Manrope.ttf"
+    ],
+    "bytes": 3844026,
+    "htmlBytes": 11538
+  },
+  "firstPolish": [
+    "assets/polish/oval/1.webp",
+    "assets/polish/oval/2.webp",
+    "assets/polish/oval/3.webp",
+    "assets/polish/oval/4.webp"
+  ],
+  "shapeReports": [
+    {
+      "shape": "round",
+      "images": 4
+    },
+    {
+      "shape": "square",
+      "images": 4
+    },
+    {
+      "shape": "rectangle",
+      "images": 4
+    }
+  ],
+  "rings": [
+    "LR0211OV01",
+    "LR2882BR01",
+    "LR2981BR01",
+    "LR2906BR01",
+    "LR5600BR01",
+    "LR2882PR01",
+    "LR2981PR01",
+    "LR2906PR01",
+    "LR2411PR01",
+    "LR2882OV01",
+    "LR2981OV01",
+    "LR2082OV01",
+    "LR2882EM01",
+    "LR2981EM01",
+    "LR2906EM01",
+    "LR3041EM01"
+  ],
+  "singleRingIframe": true,
+  "selectedRingInitialFrames": 5,
+  "polishDemoComplete": true,
+  "miningResetAndSound": true,
+  "touchComplete": true,
+  "noindex": true,
+  "errors": [],
+  "badResponses": []
+}

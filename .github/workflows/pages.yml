@@ -13,23 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Prepare static files
-        run: |
-          mkdir -p _site
-          python3 - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile
-          root = Path('_site').resolve()
-          archives = sorted(Path('.').glob('upload-*.zip'))
-          if len(archives) != 4:
-              raise ValueError('Expected four static build archives')
-          for archive in archives:
-              with ZipFile(archive) as z:
-                  for name in z.namelist():
-                      if not (root / name).resolve().is_relative_to(root):
-                          raise ValueError('Invalid archive path')
-                  z.extractall(root)
-          PY
+      - name: Prepare verified static files
+        run: python3 scripts/prepare-site.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

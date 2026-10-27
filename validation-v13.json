@@ -1,0 +1,12 @@
+{
+  "mouseDelayMs": 2012.5,
+  "touchDelayMs": 2017.4000000953674,
+  "noAutoRotationDuringWait": true,
+  "regrabCancelsPreviousWait": true,
+  "freshDelayAfterNextRelease": true,
+  "pendingCountdownPausesWhenHidden": true,
+  "compactTouchRegrab": true,
+  "smoothReturnAndAutoResume": true,
+  "errors": [],
+  "bad": []
+}

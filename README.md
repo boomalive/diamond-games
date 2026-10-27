@@ -18,7 +18,9 @@ No collection is prefetched and no archives are downloaded by the client.
 The final screen follows design frame 366:3415. The supplied 16-ring v12-v3
 collection keeps its GLBs, materials, lighting and refraction shaders.
 The tilted ring turns about a vertical axis relative to the screen. Mouse/touch
-rotation returns smoothly to its original camera trajectory after release.
+rotation waits two seconds after release, then returns smoothly to its original
+camera trajectory. A new grab cancels the pending return; the next release
+starts a fresh two-second wait. Switching tabs pauses the countdown.
 Scrolling shrinks the same live model beneath the fixed logo; scrolling back
 restores its full size. Its GLB, WebGL context and rotation phase stay intact.
 No play/pause UI.

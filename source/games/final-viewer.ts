@@ -6,6 +6,8 @@ let active=true,pausedAt=0;
 let api:Runtime|null=null;
 let homePosition:Vector3,homeTarget:Vector3,homeUp:Vector3,homeZoom=1;
 let rotationAxis:Vector3,baseRotation:Quaternion,turnRotation:Quaternion,rotationPhase=0;
+let returnAt:number|null=null;
+const RETURN_DELAY=2000;
 let returning:{start:number;direction:Vector3;distance:number;target:Vector3;up:Vector3;zoom:number;turn:Quaternion}|null=null;
 const host=document.getElementById('viewer')!;
 function state(value:string){host.dataset.motion=value;}
@@ -14,11 +16,17 @@ function applyRotation(){
 }
 function beginReturn(){
  if(!api)return;
+ returnAt=null;
  const {camera,controls}=api,position=camera.position.clone(),target=controls.target.clone();
  controls.enableDamping=false;controls.update();camera.position.copy(position);controls.target.copy(target);controls.update();
  const direction=position.clone().sub(target).normalize(),destination=homePosition.clone().sub(homeTarget).normalize();
  returning={start:performance.now(),direction,distance:position.distanceTo(target),target,up:camera.up.clone(),zoom:camera.zoom,turn:camera.quaternion.clone().setFromUnitVectors(direction,destination)};
  api.resume();state('returning');
+}
+function scheduleReturn(){
+ if(!api)return;
+ returning=null;returnAt=performance.now()+RETURN_DELAY;
+ api.pause();state('waiting');
 }
 function initialize(){
  const viewer=runtime.ringViewer;
@@ -31,8 +39,8 @@ function initialize(){
  viewer.advanceRotation=delta=>{rotationPhase+=delta*Math.PI*2/16;applyRotation();};
  homePosition=viewer.camera.position.clone();homeTarget=viewer.controls.target.clone();homeUp=viewer.camera.up.clone();homeZoom=viewer.camera.zoom;
  viewer.controls.enableZoom=false;
- viewer.controls.addEventListener('start',()=>{returning=null;viewer.controls.enableDamping=true;state('manual');});
- viewer.controls.addEventListener('end',beginReturn);
+ viewer.controls.addEventListener('start',()=>{returnAt=null;returning=null;viewer.controls.enableDamping=true;state('manual');});
+ viewer.controls.addEventListener('end',scheduleReturn);
  viewer.renderer.domElement.addEventListener('keydown',event=>{
   if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
   event.preventDefault();event.stopImmediatePropagation();rotationPhase+=event.key==='ArrowLeft'?-.12:.12;applyRotation();viewer.render();
@@ -43,8 +51,9 @@ function initialize(){
  requestAnimationFrame(tick);
 }
 function tick(now:number){
+ if(api&&active&&!document.hidden&&returnAt!==null&&now>=returnAt)beginReturn();
  if(api&&active&&!document.hidden&&returning){
-  const t=Math.min(1,(now-returning.start)/1100),u=t*t*t*(t*(t*6-15)+10);
+  const t=Math.max(0,Math.min(1,(now-returning.start)/1100)),u=t*t*t*(t*(t*6-15)+10);
   const {camera,controls}=api,turn=returning.turn.clone().identity().slerp(returning.turn,u);
   controls.target.copy(returning.target).lerp(homeTarget,u);
   camera.position.copy(returning.direction).applyQuaternion(turn).multiplyScalar(returning.distance+(homePosition.distanceTo(homeTarget)-returning.distance)*u).add(controls.target);
@@ -70,7 +79,12 @@ window.addEventListener('message',event=>{
  if(event.data.type==='active'&&active!==!!event.data.active){
   active=!!event.data.active;
   if(!active){pausedAt=performance.now();api?.pause();}
-  else{if(returning)returning.start+=performance.now()-pausedAt;api?.resume();}
+  else{
+   const pausedFor=performance.now()-pausedAt;
+   if(returnAt!==null)returnAt+=pausedFor;
+   if(returning)returning.start+=pausedFor;
+   if(returning||host.dataset.motion==='auto')api?.resume();
+  }
  }
 });
 Object.assign(window,{diamondFinalMotion:{getState:()=>({active,motion:host.dataset.motion,home:homePosition?.toArray(),target:homeTarget?.toArray(),axis:rotationAxis?.toArray(),phase:rotationPhase}),returnToPath:beginReturn,setRotationPhase:(phase:number)=>{if(Number.isFinite(phase)){rotationPhase=phase;applyRotation();api?.render();}}}});

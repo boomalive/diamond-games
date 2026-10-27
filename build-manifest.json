@@ -1,5 +1,5 @@
 {
-  "version": "v12",
+  "version": "v13",
   "archives": [
     {
       "file": "packages/part-001.zip",
@@ -295,6 +295,27 @@
           "file": "packages/final-v12-003.bin",
           "bytes": 311619,
           "sha256": "9e6967f7f5af7c47ae2b66a8d277158c745688eb96a88adf355ea63d0e79a2a2"
+        }
+      ]
+    },
+    {
+      "file": "final-tab-v13.zip",
+      "sha256": "6edcddb78e5b7fafbeb3deb7f0fb5156f1ec1ce03a900d6268ae43421e288643",
+      "parts": [
+        {
+          "file": "packages/final-v13-001.bin",
+          "bytes": 2097152,
+          "sha256": "ed0f24bf1aaf4cbf86918bb9b207a577362710dbfb3da0536caa4f9081f4a1bb"
+        },
+        {
+          "file": "packages/final-v13-002.bin",
+          "bytes": 2097152,
+          "sha256": "4fdad1e473a1dd7c08fea05f6b0995851a7cb22661cddc05500d564906afec13"
+        },
+        {
+          "file": "packages/final-v13-003.bin",
+          "bytes": 312768,
+          "sha256": "41771d48a7915986e29d16b6d6d56505b1f29d62efa96bfc9ebaa8cdcb40dcda"
         }
       ]
     }

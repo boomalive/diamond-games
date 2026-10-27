@@ -17,8 +17,11 @@ No collection is prefetched and no archives are downloaded by the client.
 
 The final screen follows design frame 366:3415. The supplied 16-ring v12-v3
 collection keeps its GLBs, materials, lighting and refraction shaders.
-The ring rotates continuously, supports mouse/touch rotation and returns
-smoothly to its original camera trajectory after release. No play/pause UI.
+The tilted ring turns about a vertical axis relative to the screen. Mouse/touch
+rotation returns smoothly to its original camera trajectory after release.
+Scrolling shrinks the same live model beneath the fixed logo; scrolling back
+restores its full size. Its GLB, WebGL context and rotation phase stay intact.
+No play/pause UI.
 The completed setting screen opens the same ring in Final. PNG export of the
 current pose works in the browser at 1500 pixels wide. The email form is a
 visual prototype and does not transmit personal data or send emails.

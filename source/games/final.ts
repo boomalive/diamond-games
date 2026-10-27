@@ -4,9 +4,21 @@ const catalog=JSON.parse(document.getElementById('final-catalog')!.textContent!)
 const initial=new URLSearchParams(window.location.search).get('ring');
 let ringId=catalog.find(r=>r.id===initial)?.id??'LR0211OV01';
 let modelFrame:HTMLIFrameElement|null=null,active=true,ready=false;
+let scrollProgress=0,scrollFrame=0;
 const area=document.getElementById('final-model-area')!;
 const download=document.getElementById('download-ring') as HTMLButtonElement;
 const status=document.getElementById('save-status')!;
+function updateScroll(){
+ scrollFrame=0;
+ const progress=Math.max(0,Math.min(1,window.scrollY/279));
+ scrollProgress=progress*progress*(3-2*progress);
+ area.style.setProperty('--model-scale',String(1-.6*scrollProgress));
+ area.style.setProperty('--model-offset',`${-93*scrollProgress}px`);
+ document.getElementById('final-page')!.dataset.scrollProgress=String(progress);
+}
+function scheduleScroll(){if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScroll);}
+window.addEventListener('scroll',scheduleScroll,{passive:true});
+window.addEventListener('resize',scheduleScroll);
 function tellActive(){modelFrame?.contentWindow?.postMessage({scope:'diamond-final',type:'active',active},'*');}
 function setRing(id:string){
  const ring=catalog.find(r=>r.id===id);if(!ring||modelFrame&&ringId===id)return;
@@ -32,5 +44,5 @@ window.addEventListener('message',event=>{
 download.addEventListener('click',()=>{if(ready){download.disabled=true;status.textContent='';modelFrame?.contentWindow?.postMessage({scope:'diamond-final',type:'snapshot'},'*');}});
 document.getElementById('save-form')!.addEventListener('submit',event=>{event.preventDefault();status.textContent='В демоверсии письмо не отправляется. Можно скачать фото кольца.';});
 document.getElementById('final-back')!.addEventListener('click',()=>window.parent.postMessage({scope:'lavivion-suite',type:'go',game:'setting'},'*'));
-Object.assign(window,{diamondFinalUI:{setRing,getState:()=>({ringId,ready,active})}});
-setRing(ringId);
+Object.assign(window,{diamondFinalUI:{setRing,getState:()=>({ringId,ready,active,scrollProgress})}});
+setRing(ringId);updateScroll();

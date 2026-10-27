@@ -1,0 +1,306 @@
+{
+  "models": [
+    {
+      "product": "LR2882BR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2981BR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2906BR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR5600BR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2882PR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2981PR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2906PR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2411PR01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2882OV01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2981OV01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2082OV01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2882EM01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2981EM01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR2906EM01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR3041EM01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    },
+    {
+      "product": "LR0211OV01",
+      "axis": {
+        "screenX": 4.3456708576056844e-17,
+        "screenY": 0.5205096184837179,
+        "quarterError": 0,
+        "axisStable": 5.551115123125783e-17
+      }
+    }
+  ],
+  "axis": {
+    "screenX": 4.3456708576056844e-17,
+    "screenY": 0.5205096184837179,
+    "quarterError": 0,
+    "axisStable": 5.551115123125783e-17
+  },
+  "scroll": [
+    {
+      "model": {
+        "x": 0,
+        "y": 149,
+        "w": 375,
+        "h": 376
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 56
+      },
+      "specs": {
+        "x": 16,
+        "y": 487,
+        "w": 343,
+        "h": 52
+      },
+      "save": {
+        "x": 16,
+        "y": 571,
+        "w": 345,
+        "h": 223
+      },
+      "progress": 0,
+      "scrollY": 0
+    },
+    {
+      "model": {
+        "x": 17.691665649414062,
+        "y": 134.37489318847656,
+        "w": 339.61669921875,
+        "h": 340.5223388671875
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 56
+      },
+      "specs": {
+        "x": 16,
+        "y": 417,
+        "w": 343,
+        "h": 52
+      },
+      "save": {
+        "x": 16,
+        "y": 501,
+        "w": 345,
+        "h": 223
+      },
+      "progress": 0.15725926745536198,
+      "scrollY": 70
+    },
+    {
+      "model": {
+        "x": 56.55241394042969,
+        "y": 102.25,
+        "w": 261.8951416015625,
+        "h": 262.5935363769531
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 56
+      },
+      "specs": {
+        "x": 16,
+        "y": 347,
+        "w": 343,
+        "h": 52
+      },
+      "save": {
+        "x": 16,
+        "y": 431,
+        "w": 345,
+        "h": 223
+      },
+      "progress": 0.5026881605316305,
+      "scrollY": 140
+    },
+    {
+      "model": {
+        "x": 95.26087188720703,
+        "y": 70.25101470947266,
+        "w": 184.478271484375,
+        "h": 184.97021484375
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 56
+      },
+      "specs": {
+        "x": 16,
+        "y": 277,
+        "w": 343,
+        "h": 52
+      },
+      "save": {
+        "x": 16,
+        "y": 361,
+        "w": 345,
+        "h": 223
+      },
+      "progress": 0.8467633152940796,
+      "scrollY": 210
+    },
+    {
+      "model": {
+        "x": 112.5,
+        "y": 56,
+        "w": 150,
+        "h": 150.40000915527344
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 56
+      },
+      "specs": {
+        "x": 16,
+        "y": 208,
+        "w": 343,
+        "h": 52
+      },
+      "save": {
+        "x": 16,
+        "y": 292,
+        "w": 345,
+        "h": 223
+      },
+      "progress": 1,
+      "scrollY": 279
+    }
+  ],
+  "compactInteraction": true,
+  "smoothReturn": true,
+  "reverseScroll": true,
+  "noModelReloadOnScroll": true,
+  "photoDownload": true,
+  "mouseWheel": true,
+  "touchScroll": true,
+  "touchCompactRotation": true,
+  "errors": [],
+  "bad": []
+}

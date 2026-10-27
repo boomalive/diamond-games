@@ -1,13 +1,17 @@
 import type {Group,PerspectiveCamera,Quaternion,Vector3,WebGLRenderer} from 'three';
 import type {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
-type Runtime={ready:boolean;error?:string;camera:PerspectiveCamera;renderer:WebGLRenderer;controls:OrbitControls;rotationRoot:Group;resume:()=>void;pause:()=>void;render:()=>void};
+type Runtime={ready:boolean;error?:string;camera:PerspectiveCamera;renderer:WebGLRenderer;controls:OrbitControls;rotationRoot:Group;advanceRotation?:(delta:number)=>void;resume:()=>void;pause:()=>void;render:()=>void};
 const runtime=window as unknown as {ringViewer?:Runtime};
 let active=true,pausedAt=0;
 let api:Runtime|null=null;
 let homePosition:Vector3,homeTarget:Vector3,homeUp:Vector3,homeZoom=1;
+let rotationAxis:Vector3,baseRotation:Quaternion,turnRotation:Quaternion,rotationPhase=0;
 let returning:{start:number;direction:Vector3;distance:number;target:Vector3;up:Vector3;zoom:number;turn:Quaternion}|null=null;
 const host=document.getElementById('viewer')!;
 function state(value:string){host.dataset.motion=value;}
+function applyRotation(){
+ if(api&&baseRotation)api.rotationRoot.quaternion.copy(baseRotation).premultiply(turnRotation.setFromAxisAngle(rotationAxis,rotationPhase));
+}
 function beginReturn(){
  if(!api)return;
  const {camera,controls}=api,position=camera.position.clone(),target=controls.target.clone();
@@ -19,11 +23,20 @@ function beginReturn(){
 function initialize(){
  const viewer=runtime.ringViewer;
  if(!viewer?.ready){if(!viewer?.error)requestAnimationFrame(initialize);return;}
- api=viewer;viewer.rotationRoot.scale.multiplyScalar(1.055);
+ api=viewer;viewer.rotationRoot.scale.multiplyScalar(1.055);viewer.rotationRoot.rotation.set(0,1.25,0);
+ viewer.camera.updateMatrixWorld();
+ // Use the camera's actual screen-up direction, rather than the model's tilted Y axis.
+ rotationAxis=viewer.camera.position.clone().setFromMatrixColumn(viewer.camera.matrixWorld,1).normalize();
+ baseRotation=viewer.rotationRoot.quaternion.clone();turnRotation=baseRotation.clone().identity();
+ viewer.advanceRotation=delta=>{rotationPhase+=delta*Math.PI*2/16;applyRotation();};
  homePosition=viewer.camera.position.clone();homeTarget=viewer.controls.target.clone();homeUp=viewer.camera.up.clone();homeZoom=viewer.camera.zoom;
  viewer.controls.enableZoom=false;
  viewer.controls.addEventListener('start',()=>{returning=null;viewer.controls.enableDamping=true;state('manual');});
  viewer.controls.addEventListener('end',beginReturn);
+ viewer.renderer.domElement.addEventListener('keydown',event=>{
+  if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+  event.preventDefault();event.stopImmediatePropagation();rotationPhase+=event.key==='ArrowLeft'?-.12:.12;applyRotation();viewer.render();
+ },true);
  if(!active)viewer.pause();
  state('auto');
  window.parent.postMessage({scope:'diamond-final',type:'ready'},'*');
@@ -60,5 +73,5 @@ window.addEventListener('message',event=>{
   else{if(returning)returning.start+=performance.now()-pausedAt;api?.resume();}
  }
 });
-Object.assign(window,{diamondFinalMotion:{getState:()=>({active,motion:host.dataset.motion,home:homePosition?.toArray(),target:homeTarget?.toArray()}),returnToPath:beginReturn}});
+Object.assign(window,{diamondFinalMotion:{getState:()=>({active,motion:host.dataset.motion,home:homePosition?.toArray(),target:homeTarget?.toArray(),axis:rotationAxis?.toArray(),phase:rotationPhase}),returnToPath:beginReturn,setRotationPhase:(phase:number)=>{if(Number.isFinite(phase)){rotationPhase=phase;applyRotation();api?.render();}}}});
 initialize();

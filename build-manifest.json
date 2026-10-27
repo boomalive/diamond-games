@@ -1,5 +1,5 @@
 {
-  "version": "v10",
+  "version": "v11",
   "archives": [
     {
       "file": "packages/part-001.zip",
@@ -160,6 +160,122 @@
       "file": "packages/part-032.zip",
       "bytes": 936988,
       "sha256": "e8e337c8b26f9af11aa8428c32ca232cd9d121f0a8160ee943e7b4accfa40012"
+    },
+    {
+      "file": "final-tab-v11.zip",
+      "sha256": "665d10e6b9eec7f93963c60977710d88142b85dd916b1b9b5dfa9767393d3e13",
+      "parts": [
+        {
+          "file": "packages/final-v11-001.bin",
+          "bytes": 2097152,
+          "sha256": "52ad4b97d504f194ad934b595f6049402dff46af45883b96a5ebd3ca2a0d7d2c"
+        },
+        {
+          "file": "packages/final-v11-002.bin",
+          "bytes": 2097152,
+          "sha256": "1988a16f41cff75bd2acb5bafb52ebf676244d8d1df9f2009687193c6b2e51d5"
+        },
+        {
+          "file": "packages/final-v11-003.bin",
+          "bytes": 2097152,
+          "sha256": "90655f38c1e76bd721aaedbbff6edb2912f0bb6dc868f7172877c862bd64bbfc"
+        },
+        {
+          "file": "packages/final-v11-004.bin",
+          "bytes": 2097152,
+          "sha256": "c64a4e0c077811450966533b72facf2952e1ce060c2fa142fc58332beee90d02"
+        },
+        {
+          "file": "packages/final-v11-005.bin",
+          "bytes": 2097152,
+          "sha256": "a87669386ae90ce7b7ab744370767f4acf1a2ee4c78d5e9299b210ab980ac4f7"
+        },
+        {
+          "file": "packages/final-v11-006.bin",
+          "bytes": 2097152,
+          "sha256": "c8f26d959640ad171d20208b2568e0f525346e3f668b2f0bde4c09363c4299b0"
+        },
+        {
+          "file": "packages/final-v11-007.bin",
+          "bytes": 2097152,
+          "sha256": "b04b34e1af3986cdac0eb3a11e31c54a9ede3826fcad22c51557d614756c1435"
+        },
+        {
+          "file": "packages/final-v11-008.bin",
+          "bytes": 2097152,
+          "sha256": "63b2dcde32d6de359ade6c3655173234035ff40bf577e4e8faf898268b5ca866"
+        },
+        {
+          "file": "packages/final-v11-009.bin",
+          "bytes": 2097152,
+          "sha256": "9c0cd3a86e5a4e1b3b3dff56a83fa798284c9adaf902136d9c40bd23a7e2a855"
+        },
+        {
+          "file": "packages/final-v11-010.bin",
+          "bytes": 2097152,
+          "sha256": "8c18a1eb47e1b3422973197d3fc0902c1f529ef061ddd0a0f20b49d9d8698c26"
+        },
+        {
+          "file": "packages/final-v11-011.bin",
+          "bytes": 2097152,
+          "sha256": "ff1e59613d6668c9a6e739fafe2c17c5e7f6b2c3fbdfbc5dd30dcfb67f55333f"
+        },
+        {
+          "file": "packages/final-v11-012.bin",
+          "bytes": 2097152,
+          "sha256": "7e64c17af589598badb3d328282e93618cfb74608fc7d8463fb5787cba62a728"
+        },
+        {
+          "file": "packages/final-v11-013.bin",
+          "bytes": 2097152,
+          "sha256": "d455febe1dd55954cbda7bf3647c92f717b6618236e2220219c59d3a8e897928"
+        },
+        {
+          "file": "packages/final-v11-014.bin",
+          "bytes": 2097152,
+          "sha256": "20925c3f4491a39fca4efc3c58c9f6b7a75de1b7662f5f9c9899db2274db2c65"
+        },
+        {
+          "file": "packages/final-v11-015.bin",
+          "bytes": 2097152,
+          "sha256": "59489b4771e0b5183cac82294bae1c05f1995c0ada2ec071955de92f338bc06d"
+        },
+        {
+          "file": "packages/final-v11-016.bin",
+          "bytes": 2097152,
+          "sha256": "4cfcdd258b073aca15400e4c3807b373ce6923254dd20d605daae08c9e087f7e"
+        },
+        {
+          "file": "packages/final-v11-017.bin",
+          "bytes": 2097152,
+          "sha256": "2b7064ef4a9634bbfb3afbf4993bf86f4ecfe0e6d5bcd96c0945de7ba9b3fe3c"
+        },
+        {
+          "file": "packages/final-v11-018.bin",
+          "bytes": 2097152,
+          "sha256": "5cfb3aa85672288d2e7f3223f6390e29176142973494eb6744541d131746ae9b"
+        },
+        {
+          "file": "packages/final-v11-019.bin",
+          "bytes": 2097152,
+          "sha256": "48facdd89e96bdf97f4b7f6efd61c551551a1368f643b3f297d3bd6328a180b6"
+        },
+        {
+          "file": "packages/final-v11-020.bin",
+          "bytes": 2097152,
+          "sha256": "96d759a11c5bc348e7ac29e5ba8dd3d4ec8eda4099a2ed07fc503bf6287c9077"
+        },
+        {
+          "file": "packages/final-v11-021.bin",
+          "bytes": 2097152,
+          "sha256": "53bdba14533ddf9fbfbec9881bca85b5e1923927092ceb7b8136f272ac5cdd0e"
+        },
+        {
+          "file": "packages/final-v11-022.bin",
+          "bytes": 1884799,
+          "sha256": "75ac80576345f79d21147d51575cceb3b9a254b229a5d79cbed21f9e4a464827"
+        }
+      ]
     }
   ]
 }

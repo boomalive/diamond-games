@@ -1,39 +1,40 @@
 # Diamond Games
 
-[Play the prototype](https://boomalive.github.io/diamond-games/)
+[Open the prototype](https://boomalive.github.io/diamond-games/)
 
-Three browser mini games: mining, polishing and setting a diamond.
-The published site is public and does not require a GitHub account.
-The working branch is `diamond-games`.
+Four tabs: mining, polishing, setting a diamond, and a finished 3D ring.
+Public preview, no account required. Working branch: `diamond-games`.
 
 ## Loading
 
-The navigation loads one game on first entry. Polishing requests only four
-lossless WebP images for the selected shape. Setting loads only the selected
-ring iframe and its progressive frame buffer; no other rings are prefetched.
-There is no background collection download or service worker.
-All accepted artwork and gameplay are preserved.
+Each screen loads on first entry. Polishing requests four lossless WebP images
+for the selected shape. Setting loads only one chosen ring frame sequence.
+Final loads only the selected viewer and its original GLB. Changing the model
+destroys the previous viewer iframe. Hidden 3D screens stop rendering.
+No collection is prefetched and no archives are downloaded by the client.
 
-## Repository and local preview
+## Final screen
 
-Readable game templates and scripts are in `source/`. The four root HTML files
-are the prebuilt web edition. The ZIP files in `packages/` contain the
-static deployment, including its image folders, split below the web upload limit.
-These archives are used during publication and are never requested by the game.
+The final screen follows design frame 366:3415. The supplied 16-ring v12-v3
+collection keeps its GLBs, materials, lighting and refraction shaders.
+The ring rotates continuously, supports mouse/touch rotation and returns
+smoothly to its original camera trajectory after release. No play/pause UI.
+The completed setting screen opens the same ring in Final. PNG export of the
+current pose works in the browser at 1500 pixels wide. The email form is a
+visual prototype and does not transmit personal data or send emails.
 
-To prepare the full site and view it locally:
+## Local preview and publication
+
+Readable templates and scripts are in `source/`. The root HTML files are prebuilt.
+The verified package manifest describes static archives and their byte parts.
+These files are unpacked only when preparing the site, never in its frontend.
 
     python3 scripts/prepare-site.py
     python3 -m http.server 8000 --directory _site
 
-Open http://localhost:8000. GitHub Pages runs the same preparation step and
-publishes the resulting files. Publication has read-only repository access;
-it never commits or pushes repository changes.
+Open http://localhost:8000. GitHub Pages uses the same preparation step.
+Publication has read-only repository access and never commits changes.
 
-## Privacy and indexing
-
-Repository, branch, description and page titles use neutral names.
-All HTML pages include noindex, nofollow, noarchive and nosnippet directives.
-The source and website remain public; these directives are not access control.
-
-Manrope and Lottie licenses are included. Frame artwork is not recompressed.
+All HTML pages request noindex, nofollow, noarchive and nosnippet.
+Repository and website remain public; these directives are not access control.
+Manrope, Lottie and the 3D viewer library license files are included.

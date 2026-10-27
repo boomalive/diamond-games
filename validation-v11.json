@@ -1,0 +1,121 @@
+{
+  "models": [
+    {
+      "product": "LR2882BR01",
+      "ready": true
+    },
+    {
+      "product": "LR2981BR01",
+      "ready": true
+    },
+    {
+      "product": "LR2906BR01",
+      "ready": true
+    },
+    {
+      "product": "LR5600BR01",
+      "ready": true
+    },
+    {
+      "product": "LR2882PR01",
+      "ready": true
+    },
+    {
+      "product": "LR2981PR01",
+      "ready": true
+    },
+    {
+      "product": "LR2906PR01",
+      "ready": true
+    },
+    {
+      "product": "LR2411PR01",
+      "ready": true
+    },
+    {
+      "product": "LR2882OV01",
+      "ready": true
+    },
+    {
+      "product": "LR2981OV01",
+      "ready": true
+    },
+    {
+      "product": "LR2082OV01",
+      "ready": true
+    },
+    {
+      "product": "LR2882EM01",
+      "ready": true
+    },
+    {
+      "product": "LR2981EM01",
+      "ready": true
+    },
+    {
+      "product": "LR2906EM01",
+      "ready": true
+    },
+    {
+      "product": "LR3041EM01",
+      "ready": true
+    },
+    {
+      "product": "LR0211OV01",
+      "ready": true
+    }
+  ],
+  "slots": {
+    ".header": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 56
+    },
+    ".intro": {
+      "x": 16,
+      "y": 80,
+      "w": 345,
+      "h": 72
+    },
+    ".model-area": {
+      "x": 0,
+      "y": 149,
+      "w": 375,
+      "h": 376
+    },
+    ".specifications": {
+      "x": 16,
+      "y": 487,
+      "w": 343,
+      "h": 52
+    },
+    ".save-form": {
+      "x": 16,
+      "y": 571,
+      "w": 345,
+      "h": 223
+    },
+    ".actions": {
+      "x": 16,
+      "y": 834,
+      "w": 343,
+      "h": 101
+    }
+  },
+  "initialOnlyMining": true,
+  "selectedFinalOnly": true,
+  "manualRotation": true,
+  "smoothReturn": {
+    "before": 5.254975880851124,
+    "during": 4.307831211471605,
+    "after": 2.0350724194510405e-15
+  },
+  "continuous360": true,
+  "download": true,
+  "hiddenRenderingStops": true,
+  "settingNextUsesMatchingRing": true,
+  "touchReturn": true,
+  "errors": [],
+  "bad": []
+}

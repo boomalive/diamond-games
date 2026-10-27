@@ -1,12 +1,15 @@
 export {};
-type GameName = 'mining' | 'polish' | 'setting';
-const names: GameName[] = ['mining','polish','setting'];
-const labels = {mining:'Добыча',polish:'Огранка',setting:'Вставка'};
+type GameName = 'mining' | 'polish' | 'setting' | 'final';
+const names: GameName[] = ['mining','polish','setting','final'];
+const labels = {mining:'Добыча',polish:'Огранка',setting:'Вставка',final:'Финал'};
 const payload = JSON.parse(document.getElementById('games-data')!.textContent!) as Record<GameName,string>;
 const frames = names.reduce((result,name)=>{result[name]=document.getElementById(`frame-${name}`) as HTMLIFrameElement;return result;},{} as Record<GameName,HTMLIFrameElement>);
 const loaded = new Set<GameName>();
 const shape = document.getElementById('shape') as HTMLSelectElement;
 const ring = document.getElementById('ring') as HTMLSelectElement;
+const finalRing = document.getElementById('final-ring') as HTMLSelectElement;
+finalRing.value='LR0211OV01';
+let loadedFinalRing = '';
 let current: GameName = 'mining';
 let soundEnabled = false;
 
@@ -20,6 +23,19 @@ function updateSoundButton() {
 function send(name: GameName, data: Record<string,unknown>) {
   frames[name].contentWindow?.postMessage({scope:'lavivion-suite',...data},'*');
 }
+function loadFinalRing() {
+  if(loadedFinalRing===finalRing.value)return;
+  if(loaded.has('final')){
+    loadedFinalRing=finalRing.value;send('final',{type:'final-ring',ringId:finalRing.value});return;
+  }
+  const frame=document.createElement('iframe');
+  frame.id='frame-final';frame.title=`Готовое кольцо · ${finalRing.value}`;
+  frame.allow='fullscreen';frame.dataset.ring=finalRing.value;
+  const url=new URL(payload.final,document.baseURI);url.searchParams.set('ring',finalRing.value);frame.src=url.href;
+  frame.addEventListener('load',()=>{send('final',{type:'active',active:current==='final'});send('final',{type:'final-ring',ringId:finalRing.value});},{once:true});
+  frames.final.replaceWith(frame);frames.final=frame;
+  loadedFinalRing=finalRing.value;loaded.add('final');
+}
 function selectGame(name: GameName) {
   current = name;
   for (const key of names) {
@@ -30,7 +46,8 @@ function selectGame(name: GameName) {
     if (loaded.has(key)) send(key,{type:'active',active});
   }
   for(const key of names)document.getElementById(`${key}-controls`)!.hidden=key!==name;
-  if (!loaded.has(name)) {
+  if(name==='final')loadFinalRing();
+  else if (!loaded.has(name)) {
     loaded.add(name);
     frames[name].addEventListener('load',()=>{
       send(name,{type:'active',active:current===name});
@@ -61,14 +78,15 @@ for (const name of names) {
   tab.addEventListener('keydown',event=>{
     const index=names.indexOf(name);
     let target: GameName|undefined;
-    if(event.key==='ArrowRight')target=names[(index+1)%3];
-    if(event.key==='ArrowLeft')target=names[(index+2)%3];
-    if(event.key==='Home')target=names[0];if(event.key==='End')target=names[2];
+    if(event.key==='ArrowRight')target=names[(index+1)%names.length];
+    if(event.key==='ArrowLeft')target=names[(index+names.length-1)%names.length];
+    if(event.key==='Home')target=names[0];if(event.key==='End')target=names[names.length-1];
     if(target){event.preventDefault();selectGame(target);document.getElementById(`tab-${target}`)!.focus();}
   });
 }
 shape.addEventListener('change',()=>send('polish',{type:'shape',shape:shape.value}));
 ring.addEventListener('change',()=>send('setting',{type:'setting-ring',ringId:ring.value}));
+finalRing.addEventListener('change',()=>{if(current==='final')loadFinalRing();});
 document.getElementById('setting-reset')!.addEventListener('click',()=>send('setting',{type:'reset'}));
 document.getElementById('mining-reset')!.addEventListener('click',()=>send('mining',{type:'reset'}));
 document.getElementById('mining-sound')!.addEventListener('click',()=>{soundEnabled=!soundEnabled;updateSoundButton();send('mining',{type:'sound',enabled:soundEnabled});});
@@ -79,9 +97,12 @@ window.addEventListener('message',event=>{
   if (!name) return;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='mining-sound-state'&&name==='mining'){soundEnabled=!!event.data.enabled;updateSoundButton();}
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-ui-state'&&name==='setting'&&ring.value!==event.data.ringId)ring.value=event.data.ringId;
+  if(event.data?.scope==='lavivion-suite'&&event.data.type==='final-ui-state'&&name==='final'&&finalRing.value!==event.data.ringId)finalRing.value=event.data.ringId;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-next'&&name==='setting'){
     document.getElementById('announcement')!.textContent='Идеально! Бриллиант на своем месте.';
     window.dispatchEvent(new CustomEvent('lavivion:setting-next',{detail:{ringId:event.data.ringId}}));
+    if([...finalRing.options].some(option=>option.value===event.data.ringId))finalRing.value=event.data.ringId;
+    selectGame('final');
   }
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='go'&&names.indexOf(event.data.game)!==-1)selectGame(event.data.game);
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='next')selectGame(name==='mining'?'polish':'setting');

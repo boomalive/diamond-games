@@ -17,7 +17,8 @@ No collection is prefetched and no archives are downloaded by the client.
 
 The final screen follows design frame 366:3415. The supplied 16-ring v12-v3
 collection keeps its GLBs, materials, lighting and refraction shaders.
-The tilted ring turns about a vertical axis relative to the screen. Mouse/touch
+The tilted ring turns about its own local Y axis, matching the original
+collection catalogue. Each model fits its full turn inside the preview. Mouse/touch
 rotation waits two seconds after release, then returns smoothly to its original
 camera trajectory. A new grab cancels the pending return; the next release
 starts a fresh two-second wait. Switching tabs pauses the countdown.
@@ -64,3 +65,13 @@ in verified lossless WebP, 47.3% smaller than the native PNG files. The other
 three image states and all gameplay thresholds remain unchanged. Each screen
 loads only the selected shape. Polishing document revision: 13-20261028-4;
 the main edition stays v13.
+
+## Final turntable adjustment · 2026-10-28
+
+Final document and viewer revision: 13-20261028-5; edition stays v13. The
+reference is the original ring-collection-v12-v1 catalogue, LR5600BR01.
+Camera and tilt are retained; autoplay follows each ring's own local Y axis.
+A constant per-ring scale is calculated from all vertices over the full turn,
+keeping the model inside the preview and above the specifications. This
+viewer fit preserves the existing fixed 1500-pixel PNG export. The two-second
+inspection pause, smooth return and compact scrolling are unchanged.

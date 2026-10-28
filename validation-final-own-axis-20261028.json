@@ -1,0 +1,296 @@
+{
+  "package": {
+    "version": "v13",
+    "revision": "13-20261028-5",
+    "changedSiteFiles": [
+      "index.html",
+      "final.html",
+      "README.md",
+      "final-rings/LR0211OV01/index.html",
+      "final-rings/LR2082OV01/index.html",
+      "final-rings/LR2411PR01/index.html",
+      "final-rings/LR2882BR01/index.html",
+      "final-rings/LR2882EM01/index.html",
+      "final-rings/LR2882OV01/index.html",
+      "final-rings/LR2882PR01/index.html",
+      "final-rings/LR2906BR01/index.html",
+      "final-rings/LR2906EM01/index.html",
+      "final-rings/LR2906PR01/index.html",
+      "final-rings/LR2981BR01/index.html",
+      "final-rings/LR2981EM01/index.html",
+      "final-rings/LR2981OV01/index.html",
+      "final-rings/LR2981PR01/index.html",
+      "final-rings/LR3041EM01/index.html",
+      "final-rings/LR5600BR01/index.html"
+    ],
+    "parts": [
+      {
+        "file": "packages/final-own-axis-v13-20261028-001.bin",
+        "bytes": 2097152,
+        "sha256": "3cfb03ee87c4833709deef64efb0479838087bdb34e0502203f40b3e641dd1c6",
+        "gitSha": "7e5525e1237b3ce89849c312f0d62f4ce2520c01"
+      },
+      {
+        "file": "packages/final-own-axis-v13-20261028-002.bin",
+        "bytes": 2097152,
+        "sha256": "0e1e3a056b30f3532dc0cd6863be711b7d3fc434f6fc38f2a709ad1495890424",
+        "gitSha": "062407de8f07b18a214dcaf022de7f41bb1cff4b"
+      },
+      {
+        "file": "packages/final-own-axis-v13-20261028-003.bin",
+        "bytes": 322744,
+        "sha256": "62b24d2dcdc7dff47e1249d230f189ea7e9aa7efb4dc9188d7b675bd998df8c6",
+        "gitSha": "9835fb3abf08e4bdbd12b07887f7c8b397da9a2b"
+      }
+    ],
+    "archiveBytes": 4517048,
+    "archiveSha256": "4444e96c6b7e6a46e43f0eccf0e1dc9cad137d5e8d3760400c374257bd11032c"
+  },
+  "framing": {
+    "models": 16,
+    "samplesPerTurn": 72,
+    "reports": [
+      {
+        "product": "LR2882BR01",
+        "scale": 0.9318360442200493,
+        "bounds": [
+          -0.7151840937413878,
+          0.6321851962549888,
+          -0.7396199031232918,
+          0.7199491575314565
+        ],
+        "vertices": 31590,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2981BR01",
+        "scale": 0.9465592518453818,
+        "bounds": [
+          -0.7153824729224122,
+          0.6384466545317806,
+          -0.7396216603666881,
+          0.725989039018132
+        ],
+        "vertices": 95296,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2906BR01",
+        "scale": 0.9395568776269335,
+        "bounds": [
+          -0.7163432589429942,
+          0.6374575828449901,
+          -0.739747297121701,
+          0.7233280943191611
+        ],
+        "vertices": 78538,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR5600BR01",
+        "scale": 0.9298194399707788,
+        "bounds": [
+          -0.7183144981415772,
+          0.6390428006918426,
+          -0.7398449064481538,
+          0.7113221888171744
+        ],
+        "vertices": 108216,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2882PR01",
+        "scale": 0.9591915063766251,
+        "bounds": [
+          -0.7094346261592895,
+          0.6137189479498755,
+          -0.7396744009521861,
+          0.7611415501330584
+        ],
+        "vertices": 75125,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2981PR01",
+        "scale": 0.9469162949693495,
+        "bounds": [
+          -0.7137946329728113,
+          0.6385316774392014,
+          -0.7396305827990178,
+          0.7462124693881423
+        ],
+        "vertices": 94169,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2906PR01",
+        "scale": 0.9236857945299868,
+        "bounds": [
+          -0.721929265261318,
+          0.6599843001430676,
+          -0.7396389411061577,
+          0.7509326753999005
+        ],
+        "vertices": 77919,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2411PR01",
+        "scale": 0.9321060882982443,
+        "bounds": [
+          -0.7173771685434952,
+          0.6338715629667717,
+          -0.7396686277498155,
+          0.7316827130202933
+        ],
+        "vertices": 104167,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2882OV01",
+        "scale": 0.9382950241474605,
+        "bounds": [
+          -0.7144389231206029,
+          0.6343614251151747,
+          -0.7397512603355917,
+          0.7490416742083472
+        ],
+        "vertices": 76149,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2981OV01",
+        "scale": 0.9398749099052406,
+        "bounds": [
+          -0.717586484412763,
+          0.6500924280825837,
+          -0.7396496986155515,
+          0.7522515579762864
+        ],
+        "vertices": 95093,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2082OV01",
+        "scale": 0.9335245237144021,
+        "bounds": [
+          -0.7192366583901044,
+          0.6587587635813352,
+          -0.739656461775976,
+          0.7483639664624613
+        ],
+        "vertices": 78623,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2882EM01",
+        "scale": 0.9336510069454252,
+        "bounds": [
+          -0.7166460645385905,
+          0.64425456205187,
+          -0.7396410880108447,
+          0.7459736327294046
+        ],
+        "vertices": 76169,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2981EM01",
+        "scale": 0.9386463247978556,
+        "bounds": [
+          -0.7180905192551619,
+          0.6519767221327962,
+          -0.7396526711088559,
+          0.7496332148267353
+        ],
+        "vertices": 93852,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR2906EM01",
+        "scale": 0.9249952833784407,
+        "bounds": [
+          -0.7215472831884018,
+          0.6582828443244547,
+          -0.7397560710712723,
+          0.7391746697316859
+        ],
+        "vertices": 78551,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR3041EM01",
+        "scale": 0.9381752274355091,
+        "bounds": [
+          -0.7136581190205743,
+          0.6406104590417098,
+          -0.7396290075837554,
+          0.7459451561397955
+        ],
+        "vertices": 117921,
+        "fullTurnFits": true,
+        "ownAxis": true
+      },
+      {
+        "product": "LR0211OV01",
+        "scale": 0.9304880436051227,
+        "bounds": [
+          -0.7178919262556251,
+          0.6408599145110951,
+          -0.7399894116270147,
+          0.7496010818824242
+        ],
+        "vertices": 109542,
+        "fullTurnFits": true,
+        "ownAxis": true
+      }
+    ],
+    "errors": [],
+    "bad": []
+  },
+  "interaction": {
+    "mouseDelayMs": 2012.8000001907349,
+    "touchDelayMs": 2018.1999998092651,
+    "noAutoRotationDuringWait": true,
+    "regrabCancelsPreviousWait": true,
+    "freshDelayAfterNextRelease": true,
+    "pendingCountdownPausesWhenHidden": true,
+    "compactTouchRegrab": true,
+    "smoothReturnAndAutoResume": true,
+    "errors": [],
+    "bad": []
+  },
+  "finalAndExport": {
+    "url": "http://127.0.0.1:8801/?v=13-20261028-5",
+    "version": "v13",
+    "live": false,
+    "ownLocalYAxis": true,
+    "referenceCameraMatched": true,
+    "fullTurnFraming": true,
+    "autoSpin": true,
+    "twoSecondWaitAndReturn": true,
+    "compactSameViewer": true,
+    "fixedPngPreserved": true,
+    "pngSha256": "d6985283b87185121bbb24a41381fe52a3f18cdc53356f8d9827f40aae256768",
+    "livePoseAndScaleRestored": true,
+    "hiddenRingPicker": true,
+    "noCollectionPrefetch": true,
+    "errors": [],
+    "bad": []
+  },
+  "sourceVerifyPassed": true
+}

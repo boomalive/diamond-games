@@ -365,6 +365,27 @@
           "sha256": "c2f73a7f1152de89e3a85f0c6158a7063e86e131fe4fef7901e8b63dbbcd85cc"
         }
       ]
+    },
+    {
+      "file": "final-own-axis-v13-20261028.zip",
+      "sha256": "4444e96c6b7e6a46e43f0eccf0e1dc9cad137d5e8d3760400c374257bd11032c",
+      "parts": [
+        {
+          "file": "packages/final-own-axis-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "3cfb03ee87c4833709deef64efb0479838087bdb34e0502203f40b3e641dd1c6"
+        },
+        {
+          "file": "packages/final-own-axis-v13-20261028-002.bin",
+          "bytes": 2097152,
+          "sha256": "0e1e3a056b30f3532dc0cd6863be711b7d3fc434f6fc38f2a709ad1495890424"
+        },
+        {
+          "file": "packages/final-own-axis-v13-20261028-003.bin",
+          "bytes": 322744,
+          "sha256": "62b24d2dcdc7dff47e1249d230f189ea7e9aa7efb4dc9188d7b675bd998df8c6"
+        }
+      ]
     }
   ]
 }

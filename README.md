@@ -57,15 +57,15 @@ The last 31 frames are reused byte for byte. Its admin angle selector compares
 Previous and New; ring selection stays hidden. Other ring modules and all
 GLBs are unchanged. Explanatory copy is corrected.
 
-## Unfaceted polishing images · 2026-10-28
+## Current polishing images · 2026-10-28
 
-The second image (30% state) for all four shapes now uses the four final
-*-unfaceted-2000.png files from four-final-stones-only-v3.zip. Rough layered
-mineral structure replaces regular polished facets. The excluded initial
-square trial is not used. Supplied 2000×2000 pixels are retained exactly in
-verified lossless WebP, 32.8% smaller than the PNG originals. All other image
-states, layout and mechanics remain unchanged; only the selected shape loads.
-Polishing document revision: 13-20261028-6. Main edition stays v13.
+The second image (30% state) for each shape now uses the user's attached
+круг 2.png, овал 2.png, квадрат 2.png and прямоугольник 2.png from the folder
+доработка этапа огранки. These supersede the previously generated sets.
+Supplied 2000×2000 RGBA pixels are retained exactly in verified lossless
+WebP, 40.1% smaller than the PNG originals. All other image states, layout
+and mechanics remain unchanged; only the selected shape loads.
+Polishing document revision: 13-20261028-7. Main edition stays v13.
 
 ## Final turntable adjustment · 2026-10-28
 

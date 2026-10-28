@@ -407,6 +407,22 @@
           "sha256": "4f76ce0dc8e0e1bf1dac7e0557eb215fc29ca244bbbf95f9bb0a83a2bcdade92"
         }
       ]
+    },
+    {
+      "file": "polish-user-v13-20261028.zip",
+      "sha256": "1af88ba4266f461a89e3450ebe581b4dd67208a2607660257c4e28fe0570e9cf",
+      "parts": [
+        {
+          "file": "packages/polish-user-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "451dafaa8907c7790ff2a2fa51eda9831adfd9a860b9b39bad6c486e003e2c19"
+        },
+        {
+          "file": "packages/polish-user-v13-20261028-002.bin",
+          "bytes": 1661886,
+          "sha256": "c3342100082fdf7acbb67c7973d8198c62ad5805a23a79089eb25e25e8f87064"
+        }
+      ]
     }
   ]
 }

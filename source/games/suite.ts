@@ -66,6 +66,7 @@ function selectGame(name: GameName) {
   }
   document.getElementById('announcement')!.textContent=`Игра: ${labels[name]}`;
   document.body.dataset.game=name;
+  document.documentElement.dataset.game=name;
 }
 function resize() {
   const width=document.documentElement.clientWidth,height=document.documentElement.clientHeight;

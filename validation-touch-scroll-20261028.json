@@ -1,0 +1,114 @@
+{
+  "version": "v13",
+  "revision": "13-20261028-10",
+  "changedSiteFiles": [
+    "README.md",
+    "index.html",
+    "polish.html",
+    "ring-setting-frontal-v5/LR2882BR01/index.html",
+    "ring-setting/LR0211OV01/index.html",
+    "ring-setting/LR2082OV01/index.html",
+    "ring-setting/LR2411PR01/index.html",
+    "ring-setting/LR2882BR01/index.html",
+    "ring-setting/LR2882EM01/index.html",
+    "ring-setting/LR2882OV01/index.html",
+    "ring-setting/LR2882PR01/index.html",
+    "ring-setting/LR2906BR01/index.html",
+    "ring-setting/LR2906EM01/index.html",
+    "ring-setting/LR2906PR01/index.html",
+    "ring-setting/LR2981BR01/index.html",
+    "ring-setting/LR2981EM01/index.html",
+    "ring-setting/LR2981OV01/index.html",
+    "ring-setting/LR2981PR01/index.html",
+    "ring-setting/LR3041EM01/index.html",
+    "ring-setting/LR5600BR01/index.html",
+    "setting.html"
+  ],
+  "animationFramesUnchanged": true,
+  "miningAndFinalUnchanged": true,
+  "canonicalAnimationRuntimeUnchanged": true,
+  "sourceVerifyPassed": true,
+  "integrationQa": {
+    "live": false,
+    "url": "http://127.0.0.1:8801/?v=13-20261028-10",
+    "cases": [
+      {
+        "engine": "chromium",
+        "viewport": {
+          "width": 375,
+          "height": 667
+        },
+        "nativeFingerDrag": true,
+        "webkitPointerDrag": false,
+        "touchFallbackPreventsDefault": true,
+        "settingComplete": true,
+        "settingRollback": true,
+        "previousVariantComplete": true,
+        "polishProgress": 79,
+        "polishReset": true,
+        "polishShapeSwitch": true,
+        "noPointerCancels": true,
+        "noPageScrollDuringGames": true,
+        "finalFormScrollPreserved": true,
+        "errors": [],
+        "bad": []
+      },
+      {
+        "engine": "chromium",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "nativeFingerDrag": true,
+        "webkitPointerDrag": false,
+        "touchFallbackPreventsDefault": true,
+        "settingComplete": true,
+        "settingRollback": true,
+        "previousVariantComplete": true,
+        "polishProgress": 79,
+        "polishReset": true,
+        "polishShapeSwitch": true,
+        "noPointerCancels": true,
+        "noPageScrollDuringGames": true,
+        "finalFormScrollPreserved": true,
+        "errors": [],
+        "bad": []
+      },
+      {
+        "engine": "webkit",
+        "viewport": {
+          "width": 390,
+          "height": 664
+        },
+        "nativeFingerDrag": false,
+        "webkitPointerDrag": true,
+        "touchFallbackPreventsDefault": true,
+        "settingComplete": true,
+        "settingRollback": true,
+        "previousVariantComplete": true,
+        "polishProgress": 79,
+        "polishReset": true,
+        "polishShapeSwitch": true,
+        "noPointerCancels": true,
+        "noPageScrollDuringGames": true,
+        "finalFormScrollPreserved": true,
+        "errors": [],
+        "bad": []
+      }
+    ]
+  },
+  "archive": "packages/touch-scroll-v13-20261028.zip",
+  "archiveBytes": 200614,
+  "archiveSha256": "74c91012acabbbb67fbc5b65419dce64699237b5dae2869b3b0afdafeec7e9ab",
+  "gitSha": "3e9fc7f2fc53bf5e77f799af6ee38d646125e678",
+  "sourceFiles": [
+    "touch-guard.ts",
+    "setting-touch.ts",
+    "polish.js",
+    "polish.css",
+    "setting.ts",
+    "setting.css",
+    "suite.ts",
+    "style.css"
+  ]
+}

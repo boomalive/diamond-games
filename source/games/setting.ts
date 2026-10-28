@@ -51,7 +51,10 @@ function setRing(id: string, force = false) {
   previous?.remove();
   next.id='ring-game';next.className='ring-frame';next.title=`Установка бриллианта · ${ring.label}`;
   next.width='375';next.height='340';
-  next.src=new URL(variant==='previous'&&ring.previousModule?ring.previousModule:ring.module,document.baseURI).href;
+  const moduleURL=new URL(variant==='previous'&&ring.previousModule?ring.previousModule:ring.module,document.baseURI);
+  const hostRevision=new URL(document.baseURI).searchParams.get('v');
+  if(hostRevision)moduleURL.searchParams.set('host',hostRevision);
+  next.src=moduleURL.href;
   next.addEventListener('error',()=>{if(ringFrame===next){phase='error';failed=true;render('start',0);}});
   area.replaceChildren(next);
   render('start',0);

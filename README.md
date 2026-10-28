@@ -86,3 +86,16 @@ runtime and gesture are preserved; frames 78–126 are reused byte for byte
 from v2. The Previous option remains the original setting module. Other 15
 rings, polishing and final 3D stay unchanged. Setting revision: 13-20261028-9;
 the main edition stays v13. Intermediate v3/v4 candidates were not published.
+
+## Mobile gestures · 2026-10-28
+
+Polishing and setting document revision: 13-20261028-10; main edition stays v13.
+The shared host and both embedded game screens suppress native page panning.
+A scoped non-passive touch guard on each actual game surface supports nested
+frames in mobile Safari. The selected setting module is versioned with its
+host so cached HTML receives the fix. Canonical frames, sequence metadata,
+polishing mechanics and 3D assets are unchanged. Final retains its scrollable
+form and shrinking live viewer.
+
+Verified using native mobile Chromium touch input at 375×667 and 320×568,
+and WebKit pointer interaction plus touch-default prevention at 390×664.

@@ -439,6 +439,11 @@
           "sha256": "357b1da4985cf0331f4004d1d784487a65a9324da68756cd51c59f835623430a"
         }
       ]
+    },
+    {
+      "file": "packages/touch-scroll-v13-20261028.zip",
+      "bytes": 200614,
+      "sha256": "74c91012acabbbb67fbc5b65419dce64699237b5dae2869b3b0afdafeec7e9ab"
     }
   ]
 }

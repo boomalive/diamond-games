@@ -1,10 +1,12 @@
 /* global document, window, Image, URLSearchParams, performance, requestAnimationFrame, cancelAnimationFrame, matchMedia, CustomEvent, console */
+import {preventPageGestures} from './touch-guard';
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
   const canvas = $('stone'), ctx = canvas.getContext('2d');
   const effects = $('effects'), fx = effects.getContext('2d');
   const wrap = $('stone-wrap'), brush = $('brush');
+  preventPageGestures(wrap);
   const W = 360, H = 360, MW = 180, MH = 180, N = MW * MH;
   // More deliberate polishing: retain the tool's visual size, narrow its contact
   // patch and let the player finish almost all of the surface before cleanup.

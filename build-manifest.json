@@ -444,6 +444,22 @@
       "file": "packages/touch-scroll-v13-20261028.zip",
       "bytes": 200614,
       "sha256": "74c91012acabbbb67fbc5b65419dce64699237b5dae2869b3b0afdafeec7e9ab"
+    },
+    {
+      "file": "setting-depth-v13-20261028.zip",
+      "sha256": "cf153e1012960bd7430596312cdfbcb94c1cba5cf22d78ac8de22a3763c16496",
+      "parts": [
+        {
+          "file": "packages/setting-depth-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "a453eb7ab98e47d7686ac70fff1a8a123554e12e9d9e7f91fec563421c22cb3b"
+        },
+        {
+          "file": "packages/setting-depth-v13-20261028-002.bin",
+          "bytes": 815868,
+          "sha256": "6d27365634cc4c241c0dd2e42c26fcf9bb81a40e2e91da6ef3ad57db99bf00e9"
+        }
+      ]
     }
   ]
 }

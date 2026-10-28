@@ -99,3 +99,15 @@ form and shrinking live viewer.
 
 Verified using native mobile Chromium touch input at 375×667 and 320×568,
 and WebKit pointer interaction plus touch-default prevention at 390×664.
+
+## Raised setting view · 2026-10-28
+
+The approved New variant for LR2882BR01 uses the complete frontal v6 module.
+Its stronger ring tilt lowers the rear engraving and raises the setting; the
+whole mount is lifted about 20 CSS pixels. Parallel silver jaws and curved
+tips are retained from v5. Updated frames and trajectory metadata 0–95 are
+shipped together. Frames 96–126, interaction runtime and the gesture SVG
+remain original. Previous and the other fifteen sequences are unchanged.
+Setting revision: 13-20261028-11; main edition stays v13. Mobile gesture
+protection from revision 10 remains in all setting modules and polishing.
+Polishing remains revision 13-20261028-10 and Final 13-20261028-5.

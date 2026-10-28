@@ -318,6 +318,11 @@
           "sha256": "41771d48a7915986e29d16b6d6d56505b1f29d62efa96bfc9ebaa8cdcb40dcda"
         }
       ]
+    },
+    {
+      "file": "packages/admin-controls-v13.zip",
+      "bytes": 6201,
+      "sha256": "43e04c3e6a7f343efd90570a3a3484b870f3b5e050e4d3d974349dd5584ecd5a"
     }
   ]
 }

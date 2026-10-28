@@ -23,7 +23,9 @@ camera trajectory. A new grab cancels the pending return; the next release
 starts a fresh two-second wait. Switching tabs pauses the countdown.
 Scrolling shrinks the same live model beneath the fixed logo; scrolling back
 restores its full size. Its GLB, WebGL context and rotation phase stay intact.
-No play/pause UI.
+No play/pause UI. The setting and final admin ring pickers are temporarily hidden
+pending approval. Their code is preserved; setting reset remains available.
+The current main edition stays v13.
 The completed setting screen opens the same ring in Final. PNG export of the
 current pose works in the browser at 1500 pixels wide. The email form is a
 visual prototype and does not transmit personal data or send emails.

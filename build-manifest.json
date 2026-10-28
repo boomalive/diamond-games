@@ -386,6 +386,27 @@
           "sha256": "62b24d2dcdc7dff47e1249d230f189ea7e9aa7efb4dc9188d7b675bd998df8c6"
         }
       ]
+    },
+    {
+      "file": "polish-unfaceted-v13-20261028.zip",
+      "sha256": "14458048bc1881017f57f48bd84109a8d861ecaf53960faf0194dbb2b44e50fb",
+      "parts": [
+        {
+          "file": "packages/polish-unfaceted-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "cb967154c2014cc145463ee2a91dbf7f932f50a969c6a6d990b60b60b418c1ef"
+        },
+        {
+          "file": "packages/polish-unfaceted-v13-20261028-002.bin",
+          "bytes": 2097152,
+          "sha256": "5d1711292d84372be2a378a990eda6b06ae0b60ddb9ed9aaaac875ae88d64385"
+        },
+        {
+          "file": "packages/polish-unfaceted-v13-20261028-003.bin",
+          "bytes": 1803843,
+          "sha256": "4f76ce0dc8e0e1bf1dac7e0557eb215fc29ca244bbbf95f9bb0a83a2bcdade92"
+        }
+      ]
     }
   ]
 }

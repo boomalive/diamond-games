@@ -1,0 +1,146 @@
+{
+  "package": {
+    "version": "v13",
+    "revision": "13-20261028-6",
+    "changedSiteFiles": [
+      "index.html",
+      "polish.html",
+      "README.md",
+      "polish-surface-lossless-report.json",
+      "assets/polish/round/2-unfaceted-20261028.webp",
+      "assets/polish/oval/2-unfaceted-20261028.webp",
+      "assets/polish/square/2-unfaceted-20261028.webp",
+      "assets/polish/rectangle/2-unfaceted-20261028.webp"
+    ],
+    "parts": [
+      {
+        "file": "packages/polish-unfaceted-v13-20261028-001.bin",
+        "bytes": 2097152,
+        "sha256": "cb967154c2014cc145463ee2a91dbf7f932f50a969c6a6d990b60b60b418c1ef",
+        "gitSha": "2776c6dbb7a97403c9241a4db13685b024ffd766"
+      },
+      {
+        "file": "packages/polish-unfaceted-v13-20261028-002.bin",
+        "bytes": 2097152,
+        "sha256": "5d1711292d84372be2a378a990eda6b06ae0b60ddb9ed9aaaac875ae88d64385",
+        "gitSha": "cb2f358ef800fb057bc5423e30a25d25a4aaed28"
+      },
+      {
+        "file": "packages/polish-unfaceted-v13-20261028-003.bin",
+        "bytes": 1803843,
+        "sha256": "4f76ce0dc8e0e1bf1dac7e0557eb215fc29ca244bbbf95f9bb0a83a2bcdade92",
+        "gitSha": "a8332e700df0b760d1b7905f88685b0b01375857"
+      }
+    ],
+    "archiveBytes": 5998147,
+    "archiveSha256": "14458048bc1881017f57f48bd84109a8d861ecaf53960faf0194dbb2b44e50fb"
+  },
+  "optimization": {
+    "images": [
+      {
+        "shape": "round",
+        "stage": 2,
+        "source": "round-unfaceted-2000.png",
+        "source_sha256": "875599bf70f3c9da38971e30831467042c08f06314b501f67822813b4365394c",
+        "width": 2000,
+        "height": 2000,
+        "png_bytes": 2186432,
+        "webp_bytes": 1465462,
+        "exact_rgb_match": true,
+        "rgb_sha256": "bae67d0462f451f1ec41cb0deea7115f9a68b03b0cd87b5a7ce03402350e7d7e",
+        "webp_sha256": "e87a18ef9d70d5830d9cabb426f4d17dfc93f73e302be7a82c527db6bb9b8dc0"
+      },
+      {
+        "shape": "oval",
+        "stage": 2,
+        "source": "oval-unfaceted-2000.png",
+        "source_sha256": "54112957bc6b4727b04082365248be214fd221e0b8ec26e2f554a9b901b619dd",
+        "width": 2000,
+        "height": 2000,
+        "png_bytes": 2075194,
+        "webp_bytes": 1386240,
+        "exact_rgb_match": true,
+        "rgb_sha256": "3e302f0b26a537eb7db26f9e13c6584a590f585ac8484e4d5ec0a02d51ae74f7",
+        "webp_sha256": "7a545d6a0cb945b557e2dad7efb363ee74d9304391e189dfd2e02c195883ef4a"
+      },
+      {
+        "shape": "square",
+        "stage": 2,
+        "source": "square-unfaceted-2000.png",
+        "source_sha256": "046c70687f30cdbc69a897e0212d267ddcfcea252343fad0f70931190d4f3f1b",
+        "width": 2000,
+        "height": 2000,
+        "png_bytes": 2308994,
+        "webp_bytes": 1563214,
+        "exact_rgb_match": true,
+        "rgb_sha256": "4f9dc84da89102c0cdb2d72f50901235027fa6343137f76d759287cffa62ab13",
+        "webp_sha256": "6eafacb059de4bb4f30d88c16d52928dae8f35f74a34a6c3d786e111e1885b67"
+      },
+      {
+        "shape": "rectangle",
+        "stage": 2,
+        "source": "rectangle-unfaceted-2000.png",
+        "source_sha256": "9ebf0385330d02bfefc404abe88dec4aacb301c34937f62f4e7edbdcc58b933e",
+        "width": 2000,
+        "height": 2000,
+        "png_bytes": 2334725,
+        "webp_bytes": 1568132,
+        "exact_rgb_match": true,
+        "rgb_sha256": "4c4a8c3d56dda083587c5e32fb7eaaee47d00c091120cac412308989bee866d1",
+        "webp_sha256": "c49fae69115b8df2a42b393bfa311da1c660e27d0b9e93a18fe88e121f703a0f"
+      }
+    ],
+    "png_bytes": 8905345,
+    "webp_bytes": 5983048,
+    "reduction_percent": 32.8,
+    "lossless": true,
+    "resized": false,
+    "source_archive": "four-final-stones-only-v3.zip",
+    "archive_sha256": "a96224d563ace7a5652b738aa1e4af514f380ce5e0a27426af48503588abd705"
+  },
+  "qa": {
+    "url": "http://127.0.0.1:59542/?v=13-20261028-6",
+    "version": "v13",
+    "live": false,
+    "reports": [
+      {
+        "shape": "oval",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "shape": "square",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "shape": "rectangle",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "shape": "round",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 2000,
+        "height": 2000
+      }
+    ],
+    "otherStatesPreserved": true,
+    "threeRoundsComplete": true,
+    "selectedShapeOnly": true,
+    "errors": [],
+    "bad": []
+  },
+  "sourceVerifyPassed": true
+}

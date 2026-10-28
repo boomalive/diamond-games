@@ -8,6 +8,7 @@ let homePosition:Vector3,homeTarget:Vector3,homeUp:Vector3,homeZoom=1;
 let rotationAxis:Vector3,baseRotation:Quaternion,turnRotation:Quaternion,rotationPhase=0;
 let returnAt:number|null=null;
 const RETURN_DELAY=2000;
+const PRESENTATION={direction:[4.3,8.8,7.7] as const,up:[-.65,1,0] as const,distance:6.7,angle:1.25};
 let returning:{start:number;direction:Vector3;distance:number;target:Vector3;up:Vector3;zoom:number;turn:Quaternion}|null=null;
 const host=document.getElementById('viewer')!;
 function state(value:string){host.dataset.motion=value;}
@@ -31,7 +32,11 @@ function scheduleReturn(){
 function initialize(){
  const viewer=runtime.ringViewer;
  if(!viewer?.ready){if(!viewer?.error)requestAnimationFrame(initialize);return;}
- api=viewer;viewer.rotationRoot.scale.multiplyScalar(1.055);viewer.rotationRoot.rotation.set(0,1.25,0);
+ api=viewer;viewer.rotationRoot.scale.multiplyScalar(1.055);viewer.rotationRoot.rotation.set(0,PRESENTATION.angle,0);
+ viewer.controls.enableDamping=false;viewer.controls.update();
+ viewer.controls.target.set(0,0,0);
+ viewer.camera.position.set(...PRESENTATION.direction).normalize().multiplyScalar(PRESENTATION.distance);
+ viewer.camera.up.set(...PRESENTATION.up).normalize();viewer.controls.update();viewer.controls.enableDamping=true;
  viewer.camera.updateMatrixWorld();
  // Use the camera's actual screen-up direction, rather than the model's tilted Y axis.
  rotationAxis=viewer.camera.position.clone().setFromMatrixColumn(viewer.camera.matrixWorld,1).normalize();
@@ -64,14 +69,24 @@ function tick(now:number){
 }
 function snapshot(){
  if(!api)return;
+ const {renderer,camera,controls,rotationRoot}=api;
+ const width=host.clientWidth,height=host.clientHeight,ratio=renderer.getPixelRatio();
+ const saved={position:camera.position.clone(),up:camera.up.clone(),quaternion:camera.quaternion.clone(),target:controls.target.clone(),zoom:camera.zoom,aspect:camera.aspect,rotation:rotationRoot.quaternion.clone()};
+ const canvas=document.createElement('canvas');canvas.width=1500;canvas.height=Math.round(1500*height/width);
  try{
-  const {renderer}=api,width=host.clientWidth,height=host.clientHeight,ratio=renderer.getPixelRatio();
-  const canvas=document.createElement('canvas');canvas.width=1500;canvas.height=Math.round(1500*height/width);
+  // Render the agreed catalogue pose without advancing controls or the live turntable.
+  camera.position.copy(homePosition);camera.up.copy(homeUp);camera.zoom=homeZoom;controls.target.copy(homeTarget);
+  camera.aspect=canvas.width/canvas.height;camera.lookAt(homeTarget);camera.updateProjectionMatrix();
+  rotationRoot.quaternion.copy(baseRotation);
   renderer.setPixelRatio(1);renderer.setSize(canvas.width,canvas.height,false);api.render();
   const context=canvas.getContext('2d')!;context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);context.drawImage(renderer.domElement,0,0);
-  renderer.setPixelRatio(ratio);renderer.setSize(width,height,false);api.render();
   canvas.toBlob(blob=>{window.parent.postMessage({scope:'diamond-final',type:blob?'snapshot':'snapshot-error',blob},'*');},'image/png');
  }catch{window.parent.postMessage({scope:'diamond-final',type:'snapshot-error'},'*');}
+ finally{
+  camera.position.copy(saved.position);camera.up.copy(saved.up);camera.quaternion.copy(saved.quaternion);camera.zoom=saved.zoom;camera.aspect=saved.aspect;camera.updateProjectionMatrix();
+  controls.target.copy(saved.target);rotationRoot.quaternion.copy(saved.rotation);
+  renderer.setPixelRatio(ratio);renderer.setSize(width,height,false);api.render();
+ }
 }
 window.addEventListener('message',event=>{
  if(event.source!==window.parent||event.data?.scope!=='diamond-final')return;

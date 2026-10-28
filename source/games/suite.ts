@@ -7,6 +7,7 @@ const frames = names.reduce((result,name)=>{result[name]=document.getElementById
 const loaded = new Set<GameName>();
 const shape = document.getElementById('shape') as HTMLSelectElement;
 const ring = document.getElementById('ring') as HTMLSelectElement;
+const settingVariant = document.getElementById('setting-variant') as HTMLSelectElement;
 const finalRing = document.getElementById('final-ring') as HTMLSelectElement;
 finalRing.value='LR0211OV01';
 let loadedFinalRing = '';
@@ -55,11 +56,12 @@ function selectGame(name: GameName) {
       if (name==='mining')send(name,{type:'sound',enabled:soundEnabled});
       if (name==='setting'){
         send(name,{type:'setting-ring',ringId:ring.value});
+        send(name,{type:'setting-variant',variant:settingVariant.value});
       }
     },{once:true});
     const url=new URL(payload[name],document.baseURI);
     if(name==='polish')url.searchParams.set('shape',shape.value);
-    if(name==='setting')url.searchParams.set('ring',ring.value);
+    if(name==='setting'){url.searchParams.set('ring',ring.value);url.searchParams.set('variant',settingVariant.value);}
     frames[name].src=url.href;
   }
   document.getElementById('announcement')!.textContent=`Игра: ${labels[name]}`;
@@ -86,6 +88,7 @@ for (const name of names) {
 }
 shape.addEventListener('change',()=>send('polish',{type:'shape',shape:shape.value}));
 ring.addEventListener('change',()=>send('setting',{type:'setting-ring',ringId:ring.value}));
+settingVariant.addEventListener('change',()=>send('setting',{type:'setting-variant',variant:settingVariant.value}));
 finalRing.addEventListener('change',()=>{if(current==='final')loadFinalRing();});
 document.getElementById('setting-reset')!.addEventListener('click',()=>send('setting',{type:'reset'}));
 document.getElementById('mining-reset')!.addEventListener('click',()=>send('mining',{type:'reset'}));
@@ -97,6 +100,10 @@ window.addEventListener('message',event=>{
   if (!name) return;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='mining-sound-state'&&name==='mining'){soundEnabled=!!event.data.enabled;updateSoundButton();}
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-ui-state'&&name==='setting'&&ring.value!==event.data.ringId)ring.value=event.data.ringId;
+  if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-ui-state'&&name==='setting'){
+    if(event.data.variant==='previous'||event.data.variant==='new')settingVariant.value=event.data.variant;
+    settingVariant.disabled=event.data.supportsVariants===false;
+  }
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='final-ui-state'&&name==='final'&&finalRing.value!==event.data.ringId)finalRing.value=event.data.ringId;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-next'&&name==='setting'){
     document.getElementById('announcement')!.textContent='Идеально! Бриллиант на своем месте.';

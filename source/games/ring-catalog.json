@@ -2,7 +2,8 @@
   {
     "id": "LR2882BR01",
     "label": "LR2882BR01",
-    "module": "./ring-setting/LR2882BR01/index.html"
+    "module": "./ring-setting-frontal-v2/LR2882BR01/index.html?v=2",
+    "previousModule": "./ring-setting/LR2882BR01/index.html"
   },
   {
     "id": "LR2981BR01",

@@ -27,7 +27,7 @@ No play/pause UI. The setting and final admin ring pickers are temporarily hidde
 pending approval. Their code is preserved; setting reset remains available.
 The current main edition stays v13.
 The completed setting screen opens the same ring in Final. PNG export of the
-current pose works in the browser at 1500 pixels wide. The email form is a
+fixed three-quarter pose works in the browser at 1500 pixels wide. The email form is a
 visual prototype and does not transmit personal data or send emails.
 
 ## Local preview and publication
@@ -45,3 +45,13 @@ Publication has read-only repository access and never commits changes.
 All HTML pages request noindex, nofollow, noarchive and nosnippet.
 Repository and website remain public; these directives are not access control.
 Manrope, Lottie and the 3D viewer library license files are included.
+
+## Client adjustments · 2026-10-28
+
+Edition stays v13; document revision 13-20261028-3. The initial final camera
+uses the agreed catalogue pose. PNG export always uses that fixed pose and
+restores the live camera afterward. Only LR2882BR01 uses the frontal setting
+trial, centred while inserting, then returning to the original final angle.
+The last 31 frames are reused byte for byte. Its admin angle selector compares
+Previous and New; ring selection stays hidden. Other ring modules and all
+GLBs are unchanged. Explanatory copy is corrected.

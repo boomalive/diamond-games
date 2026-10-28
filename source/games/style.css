@@ -6,7 +6,7 @@
 .admin-group{display:flex;align-items:center;gap:7px}#ring,#final-ring{width:118px}#mining-sound[aria-pressed="true"]{color:#002d38}
 /* Temporarily hide ring pickers until the collection is approved; preserve reset. */
 body[data-game="final"] #admin{display:none}
-body[data-game="setting"] #setting-controls label,body[data-game="setting"] #ring{display:none}
+body[data-game="setting"] #setting-controls label[for="ring"],body[data-game="setting"] #ring{display:none}
 @media(max-width:350px){.admin-label{display:none}}
-@media(max-width:310px){#setting-controls label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}}
+@media(max-width:310px){#setting-controls label[for="ring"]{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}}
 @media(max-width:600px){:root{background:#fff}body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);align-items:start}.screen-space{box-shadow:none}.game-tabs{padding-top:5px}.admin-space{height:38px}}

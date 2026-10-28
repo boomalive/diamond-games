@@ -323,6 +323,32 @@
       "file": "packages/admin-controls-v13.zip",
       "bytes": 6201,
       "sha256": "43e04c3e6a7f343efd90570a3a3484b870f3b5e050e4d3d974349dd5584ecd5a"
+    },
+    {
+      "file": "client-v13-20261028-r3.zip",
+      "sha256": "8d6234fd5ec79a2805c112a2c502756dc6fd47e4dff5394d3c55aa83e8155a30",
+      "parts": [
+        {
+          "file": "packages/client-v13-20261028-r3-001.bin",
+          "bytes": 2097152,
+          "sha256": "ea0f4001b54a68c3929037bfd0713c4326755d19e97f5546e247a3f2e0268dc2"
+        },
+        {
+          "file": "packages/client-v13-20261028-r3-002.bin",
+          "bytes": 2097152,
+          "sha256": "dbf269c8a91021dffd5d9a2da6032d97f9b84ddd39ca3440053116d38c364264"
+        },
+        {
+          "file": "packages/client-v13-20261028-r3-003.bin",
+          "bytes": 2097152,
+          "sha256": "62fe7b40d248afcc0b6bd6c58788a6a51ea36aa6f3e7912aecbd963053d6b30f"
+        },
+        {
+          "file": "packages/client-v13-20261028-r3-004.bin",
+          "bytes": 1168978,
+          "sha256": "472f371ff46e71828a95f8ccd898c6295913fc52136f7e610fb3fd480d92f83f"
+        }
+      ]
     }
   ]
 }

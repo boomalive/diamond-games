@@ -1,0 +1,95 @@
+{
+  "package": {
+    "version": "v13",
+    "revision": "13-20261028-3",
+    "changedSiteFiles": 150,
+    "oldRingModulesPreserved": true,
+    "allGlbsPreserved": true,
+    "trialProduct": "LR2882BR01",
+    "patchSha256": "8d6234fd5ec79a2805c112a2c502756dc6fd47e4dff5394d3c55aa83e8155a30",
+    "parts": [
+      {
+        "file": "packages/client-v13-20261028-r3-001.bin",
+        "bytes": 2097152,
+        "sha256": "ea0f4001b54a68c3929037bfd0713c4326755d19e97f5546e247a3f2e0268dc2",
+        "gitSha": "3eaed1b585842c92b9771420aca0a57f42982ea2"
+      },
+      {
+        "file": "packages/client-v13-20261028-r3-002.bin",
+        "bytes": 2097152,
+        "sha256": "dbf269c8a91021dffd5d9a2da6032d97f9b84ddd39ca3440053116d38c364264",
+        "gitSha": "cae32df10f1d7db1cd3c306e6ab8a4e62cc776a8"
+      },
+      {
+        "file": "packages/client-v13-20261028-r3-003.bin",
+        "bytes": 2097152,
+        "sha256": "62fe7b40d248afcc0b6bd6c58788a6a51ea36aa6f3e7912aecbd963053d6b30f",
+        "gitSha": "1589b088699d3ea5fd542c143c71ff3868f58e64"
+      },
+      {
+        "file": "packages/client-v13-20261028-r3-004.bin",
+        "bytes": 1168978,
+        "sha256": "472f371ff46e71828a95f8ccd898c6295913fc52136f7e610fb3fd480d92f83f",
+        "gitSha": "346096cccf762bdac3bb74801544bffa224b1f5f"
+      }
+    ]
+  },
+  "frontalTrial": {
+    "product": "LR2882BR01",
+    "frontalTrialOnly": true,
+    "settingCentered": true,
+    "variantSelector": true,
+    "previousVariantComplete": true,
+    "variantResetPreserved": true,
+    "original31FinalFramesByteIdentical": true,
+    "mouseRollback": true,
+    "retryHint": true,
+    "mouseComplete": true,
+    "zoomBeforeClamping": true,
+    "completeEventAfterClamp": true,
+    "gestureHiddenDuringGame": true,
+    "matchingFinalRing": true,
+    "touchComplete": true,
+    "offlineModule": true,
+    "onlySelectedFramesLoaded": true,
+    "errors": [],
+    "bad": []
+  },
+  "finalAndExport": {
+    "fixedExportIdenticalFromThreeDifferentStates": true,
+    "exportSha256": "685a851862edf91a2468a8fc3198ab108cf72ad4bfdd7032ae35361cffbf73d2",
+    "livePoseRestoredWithin1e10": true,
+    "png": {
+      "width": 1500,
+      "height": 1504
+    },
+    "homeMatchesFourCutCatalogue": true,
+    "onlySelectedGlbOnEntry": true,
+    "oneViewerAtATime": true,
+    "hiddenAdminSelectorsPreserved": true,
+    "reports": [
+      {
+        "product": "LR2882BR01",
+        "ready": true,
+        "ior": "2.42"
+      },
+      {
+        "product": "LR2882OV01",
+        "ready": true,
+        "ior": "2.42"
+      },
+      {
+        "product": "LR2882PR01",
+        "ready": true,
+        "ior": "2.42"
+      },
+      {
+        "product": "LR2882EM01",
+        "ready": true,
+        "ior": "2.42"
+      }
+    ],
+    "errors": [],
+    "bad": []
+  }
+}

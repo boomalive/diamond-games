@@ -423,6 +423,22 @@
           "sha256": "c3342100082fdf7acbb67c7973d8198c62ad5805a23a79089eb25e25e8f87064"
         }
       ]
+    },
+    {
+      "file": "tweezers-wrap-v13-20261028.zip",
+      "sha256": "7c53c0a272045edc1941fc14a630195ef04f41b9e91ab6b116bd61c48f760828",
+      "parts": [
+        {
+          "file": "packages/tweezers-wrap-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "d21f7644c58cd74ad42786b6cbd064264c1e5245b974510797613d3f8faae5e8"
+        },
+        {
+          "file": "packages/tweezers-wrap-v13-20261028-002.bin",
+          "bytes": 736243,
+          "sha256": "357b1da4985cf0331f4004d1d784487a65a9324da68756cd51c59f835623430a"
+        }
+      ]
     }
   ]
 }

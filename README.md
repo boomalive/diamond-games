@@ -76,3 +76,13 @@ A constant per-ring scale is calculated from all vertices over the full turn,
 keeping the model inside the preview and above the specifications. This
 viewer fit preserves the existing fixed 1500-pixel PNG export. The two-second
 inspection pause, smooth return and compact scrolling are unchanged.
+
+## Parallel curved tweezers · 2026-10-28
+
+The New setting variant for LR2882BR01 uses frontal v5: constant-width parallel
+steel jaws, short curved noses projecting past the stone contact points, and
+bright silver reflections. Ring and diamond studio, metadata, interaction
+runtime and gesture are preserved; frames 78–126 are reused byte for byte
+from v2. The Previous option remains the original setting module. Other 15
+rings, polishing and final 3D stay unchanged. Setting revision: 13-20261028-9;
+the main edition stays v13. Intermediate v3/v4 candidates were not published.

@@ -349,6 +349,22 @@
           "sha256": "472f371ff46e71828a95f8ccd898c6295913fc52136f7e610fb3fd480d92f83f"
         }
       ]
+    },
+    {
+      "file": "polish-surface-v13-20261028.zip",
+      "sha256": "5475bf537bf8be37c4c1ddc01ddf4f1eab782de5623160a6be005bdfd89dcf13",
+      "parts": [
+        {
+          "file": "packages/polish-surface-v13-20261028-001.bin",
+          "bytes": 2097152,
+          "sha256": "9b3f69c695c45cba84e724fd3ff5455365436118c5dbbabb52305402e2621580"
+        },
+        {
+          "file": "packages/polish-surface-v13-20261028-002.bin",
+          "bytes": 851094,
+          "sha256": "c2f73a7f1152de89e3a85f0c6158a7063e86e131fe4fef7901e8b63dbbcd85cc"
+        }
+      ]
     }
   ]
 }

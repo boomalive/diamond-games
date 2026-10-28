@@ -55,3 +55,12 @@ trial, centred while inserting, then returning to the original final angle.
 The last 31 frames are reused byte for byte. Its admin angle selector compares
 Previous and New; ring selection stays hidden. Other ring modules and all
 GLBs are unchanged. Explanatory copy is corrected.
+
+## Refined polishing surfaces · 2026-10-28
+
+The second image (30% state) for round, oval, square and rectangle is updated
+with the supplied refined surface artwork. Native 1254×1254 pixels are retained
+in verified lossless WebP, 47.3% smaller than the native PNG files. The other
+three image states and all gameplay thresholds remain unchanged. Each screen
+loads only the selected shape. Polishing document revision: 13-20261028-4;
+the main edition stays v13.

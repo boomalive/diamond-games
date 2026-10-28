@@ -1,0 +1,134 @@
+{
+  "package": {
+    "version": "v13",
+    "revision": "13-20261028-4",
+    "changedSiteFiles": [
+      "index.html",
+      "polish.html",
+      "README.md",
+      "polish-surface-lossless-report.json",
+      "assets/polish/round/2-surface-20261028.webp",
+      "assets/polish/oval/2-surface-20261028.webp",
+      "assets/polish/square/2-surface-20261028.webp",
+      "assets/polish/rectangle/2-surface-20261028.webp"
+    ],
+    "parts": [
+      {
+        "file": "packages/polish-surface-v13-20261028-001.bin",
+        "bytes": 2097152,
+        "sha256": "9b3f69c695c45cba84e724fd3ff5455365436118c5dbbabb52305402e2621580",
+        "gitSha": "113baee0c2574ed2d68df784d30eabba552c0d66"
+      },
+      {
+        "file": "packages/polish-surface-v13-20261028-002.bin",
+        "bytes": 851094,
+        "sha256": "c2f73a7f1152de89e3a85f0c6158a7063e86e131fe4fef7901e8b63dbbcd85cc",
+        "gitSha": "7c75ae316d8fb620e3a72e3701d2667b6b14c50d"
+      }
+    ],
+    "archiveBytes": 2948246,
+    "archiveSha256": "5475bf537bf8be37c4c1ddc01ddf4f1eab782de5623160a6be005bdfd89dcf13"
+  },
+  "optimization": {
+    "images": [
+      {
+        "shape": "round",
+        "stage": 2,
+        "source": "round-surface-native.png",
+        "width": 1254,
+        "height": 1254,
+        "png_bytes": 1360468,
+        "webp_bytes": 737142,
+        "exact_rgb_match": true,
+        "rgb_sha256": "d4722d9a96a9a5f642abe3892f9a50a23977c6709770d10bc5e10603c262b3d8",
+        "webp_sha256": "c56dbf0e27126b0778c890524b5cb78bf68ee719320b01f2f04fbf7d675313f8"
+      },
+      {
+        "shape": "oval",
+        "stage": 2,
+        "source": "oval-surface-native.png",
+        "width": 1254,
+        "height": 1254,
+        "png_bytes": 1425695,
+        "webp_bytes": 732026,
+        "exact_rgb_match": true,
+        "rgb_sha256": "f732e00ad07968ef6c79eb90bd0d33b2510d0d35e8f67cd7a9a585b3c793f029",
+        "webp_sha256": "d53e88921910f4860424634b021039409767a077d04885ec6d3ab6000a0521bb"
+      },
+      {
+        "shape": "square",
+        "stage": 2,
+        "source": "square-surface-native.png",
+        "width": 1254,
+        "height": 1254,
+        "png_bytes": 1403599,
+        "webp_bytes": 741770,
+        "exact_rgb_match": true,
+        "rgb_sha256": "59f78c97e9463ad80c98867bf69d61feb12d93d990b24edc1776e34261a93497",
+        "webp_sha256": "1a40b1630c46feb7ad8d308be6668de5d369a0d7ad15f68aec9930aaf7a0b1bb"
+      },
+      {
+        "shape": "rectangle",
+        "stage": 2,
+        "source": "rectangle-surface-native.png",
+        "width": 1254,
+        "height": 1254,
+        "png_bytes": 1377535,
+        "webp_bytes": 720358,
+        "exact_rgb_match": true,
+        "rgb_sha256": "5062dbadf5764afb38cadf328073637daa6e4457117954b85db61d3fb0850b46",
+        "webp_sha256": "3495a0e3884652f5be302de296bcea47f6a40464de2ac134769a69f5165393bf"
+      }
+    ],
+    "native_png_bytes": 5567297,
+    "webp_bytes": 2931296,
+    "reduction_percent": 47.3,
+    "lossless": true,
+    "resized": false,
+    "source_archive": "four-stones-refined-surface-png.zip"
+  },
+  "qa": {
+    "url": "http://127.0.0.1:57079/?v=13-20261028-4",
+    "version": "v13",
+    "live": false,
+    "reports": [
+      {
+        "shape": "oval",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "shape": "square",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "shape": "rectangle",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "shape": "round",
+        "stage": 2,
+        "progress": 30,
+        "newImageRenderedExactly": true,
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "otherStatesPreserved": true,
+    "threeRoundsComplete": true,
+    "selectedShapeOnly": true,
+    "errors": [],
+    "bad": []
+  }
+}

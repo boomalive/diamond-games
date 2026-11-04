@@ -1,0 +1,147 @@
+{
+  "version": "v13",
+  "revision": "13-20261104-2",
+  "reason": "Preserve newer admin choices while child documents initialize",
+  "files": [
+    "final-rings/LR0211OV01/index.html",
+    "final-rings/LR2082OV01/index.html",
+    "final-rings/LR2411PR01/index.html",
+    "final-rings/LR2882BR01/index.html",
+    "final-rings/LR2882EM01/index.html",
+    "final-rings/LR2882OV01/index.html",
+    "final-rings/LR2882PR01/index.html",
+    "final-rings/LR2906BR01/index.html",
+    "final-rings/LR2906EM01/index.html",
+    "final-rings/LR2906PR01/index.html",
+    "final-rings/LR2981BR01/index.html",
+    "final-rings/LR2981EM01/index.html",
+    "final-rings/LR2981OV01/index.html",
+    "final-rings/LR2981PR01/index.html",
+    "final-rings/LR3041EM01/index.html",
+    "final-rings/LR5600BR01/index.html",
+    "final.html",
+    "index.html",
+    "setting.html"
+  ],
+  "archive": "packages/admin-selection-v13-20261104.zip",
+  "bytes": 38187,
+  "sha256": "b43ff2dab21bf1d1171a35d911a66b1ff2ebfce13a6896f449dac6343f973e4e",
+  "gitSha": "5bf4f421c5749ae5216f3e4a5782e2f85bb7d19d",
+  "sourceVerifyPassed": true,
+  "allArtworkAndLightingUnchanged": true,
+  "qa": {
+    "live": false,
+    "revision": "13-20261104-2",
+    "settingReports": [
+      {
+        "id": "LR2981BR01",
+        "rollback": true,
+        "completed": true,
+        "finishMs": 2230.800000190735,
+        "selectedIframeOnly": true,
+        "preset": "round-dark-accents",
+        "gestureGuard": true
+      },
+      {
+        "id": "LR2882PR01",
+        "rollback": true,
+        "completed": true,
+        "finishMs": 2254.8999996185303,
+        "selectedIframeOnly": true,
+        "preset": "v12",
+        "gestureGuard": true
+      },
+      {
+        "id": "LR2082OV01",
+        "rollback": true,
+        "completed": true,
+        "finishMs": 2252.6000003814697,
+        "selectedIframeOnly": true,
+        "preset": "v12",
+        "gestureGuard": true
+      },
+      {
+        "id": "LR3041EM01",
+        "rollback": true,
+        "completed": true,
+        "finishMs": 2229.7999997138977,
+        "selectedIframeOnly": true,
+        "preset": "emerald-b",
+        "gestureGuard": true
+      }
+    ],
+    "finalReports": [
+      {
+        "id": "LR2981BR01",
+        "preset": "round-dark-accents",
+        "matchingRing": true,
+        "oneViewer": true,
+        "previousViewerDisposed": true,
+        "bounds": {
+          "minX": -0.7069236281057809,
+          "maxX": 0.6384546334934339,
+          "minY": -0.734402423001601,
+          "maxY": 0.7237699559667613,
+          "scale": 0.9465592518453818
+        }
+      },
+      {
+        "id": "LR2882PR01",
+        "preset": "v12",
+        "matchingRing": true,
+        "oneViewer": true,
+        "previousViewerDisposed": true,
+        "bounds": {
+          "minX": -0.6955471578868332,
+          "maxX": 0.6135247981731139,
+          "minY": -0.7342345332339957,
+          "maxY": 0.7587286205908925,
+          "scale": 0.9591915063766251
+        }
+      },
+      {
+        "id": "LR2082OV01",
+        "preset": "v12",
+        "matchingRing": true,
+        "oneViewer": true,
+        "previousViewerDisposed": true,
+        "bounds": {
+          "minX": -0.7068154937830647,
+          "maxX": 0.6587458512409309,
+          "minY": -0.7351812930152349,
+          "maxY": 0.747303263025326,
+          "scale": 0.9335245237144021
+        }
+      },
+      {
+        "id": "LR3041EM01",
+        "preset": "emerald-b",
+        "matchingRing": true,
+        "oneViewer": true,
+        "previousViewerDisposed": true,
+        "bounds": {
+          "minX": -0.7052107134733928,
+          "maxX": 0.6405831521801788,
+          "minY": -0.7353112829824869,
+          "maxY": 0.7454423853020133,
+          "scale": 0.9381752274355091
+        }
+      }
+    ],
+    "mobileTouchFourCuts": [
+      "LR2882BR01",
+      "LR2882PR01",
+      "LR2882OV01",
+      "LR2882EM01"
+    ],
+    "visibleRingPickers": true,
+    "legacyComparisonRemoved": true,
+    "nonDefaultSelectedOnly": true,
+    "selectionDuringScreenLoadingPreserved": true,
+    "normalSnapshot1500x1504": true,
+    "fixedSnapshotRestoresPose": true,
+    "compactViewerPreserved": true,
+    "errors": [],
+    "bad": []
+  }
+}

@@ -130,3 +130,12 @@ WebGL context. The original camera, local-Y turn, two-second inspection pause,
 1100 ms return, compact scrolling and fixed 1500-pixel PNG export are retained.
 Mining and polishing artwork/logic remain unchanged. The publication workflow
 is unchanged and keeps read-only repository access.
+
+## Admin selection during loading · 2026-11-04
+
+Current setting/final revision is 13-20261104-2; edition stays v13. Admin
+selections remain authoritative while a screen initializes. An initial child
+state notification no longer overwrites a newer user selection. Both setting
+and final pickers were checked with intentionally delayed document loading,
+along with the four cuts and native mobile touch. Ring artwork, GLBs, lighting
+and motion/export bundles are identical to the complete client collection.

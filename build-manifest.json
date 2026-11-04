@@ -601,6 +601,11 @@
           "sha256": "f275e06bee14d2ae7df01db64f47ebc1a6426e60067a8db213705615e96c8410"
         }
       ]
+    },
+    {
+      "file": "packages/admin-selection-v13-20261104.zip",
+      "bytes": 38187,
+      "sha256": "b43ff2dab21bf1d1171a35d911a66b1ff2ebfce13a6896f449dac6343f973e4e"
     }
   ]
 }

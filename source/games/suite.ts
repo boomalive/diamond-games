@@ -7,6 +7,8 @@ const frames = names.reduce((result,name)=>{result[name]=document.getElementById
 const loaded = new Set<GameName>();
 const shape = document.getElementById('shape') as HTMLSelectElement;
 const ring = document.getElementById('ring') as HTMLSelectElement;
+// Admin selections are authoritative. Initial state messages from a loading
+// child must not overwrite a newer selection made by the user.
 const finalRing = document.getElementById('final-ring') as HTMLSelectElement;
 finalRing.value='LR0211OV01';
 let loadedFinalRing = '';
@@ -97,8 +99,6 @@ window.addEventListener('message',event=>{
   const name=names.find(key=>frames[key].contentWindow===event.source);
   if (!name) return;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='mining-sound-state'&&name==='mining'){soundEnabled=!!event.data.enabled;updateSoundButton();}
-  if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-ui-state'&&name==='setting'&&ring.value!==event.data.ringId)ring.value=event.data.ringId;
-  if(event.data?.scope==='lavivion-suite'&&event.data.type==='final-ui-state'&&name==='final'&&finalRing.value!==event.data.ringId)finalRing.value=event.data.ringId;
   if(event.data?.scope==='lavivion-suite'&&event.data.type==='setting-next'&&name==='setting'){
     document.getElementById('announcement')!.textContent='Идеально! Бриллиант на своем месте.';
     window.dispatchEvent(new CustomEvent('lavivion:setting-next',{detail:{ringId:event.data.ringId}}));

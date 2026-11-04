@@ -1,11 +1,10 @@
 export {};
 type ViewState = 'start' | 'progress' | 'complete';
-type Ring = {id: string; label: string; module: string; previousModule?: string};
+type Ring = {id: string; label: string; module: string};
 const rings = JSON.parse(document.getElementById('setting-rings')!.textContent!) as Ring[];
 const game = document.getElementById('setting-game')!;
 const area = document.getElementById('setting-play-area')!;
 const initialRing=new URLSearchParams(window.location.search).get('ring');
-let variant=new URLSearchParams(window.location.search).get('variant')==='previous'?'previous':'new';
 let ringId = rings.find(ring=>ring.id===initialRing)?.id ?? rings[0].id;
 let ringFrame: HTMLIFrameElement | null = null;
 let state: ViewState = 'start';
@@ -16,7 +15,7 @@ let retry = false;
 let failed = false;
 
 function notify() {
-  window.parent.postMessage({scope:'lavivion-suite',type:'setting-ui-state',ringId,state,phase,progress,frame,variant,supportsVariants:!!rings.find(ring=>ring.id===ringId)?.previousModule},'*');
+  window.parent.postMessage({scope:'lavivion-suite',type:'setting-ui-state',ringId,state,phase,progress,frame},'*');
 }
 function copy(id: string, text: string) {
   const element=document.getElementById(id)!;
@@ -26,7 +25,6 @@ function render(nextState: ViewState, value: number) {
   state=nextState;progress=Number.isFinite(value)?Math.max(0,Math.min(1,value)):0;
   game.dataset.state=state;game.dataset.phase=phase;game.dataset.progress=String(progress);
   game.dataset.ring=ringId;game.dataset.frame=String(frame);game.dataset.ready=String(phase!=='loading'&&phase!=='error');
-  game.dataset.variant=variant;
   area.dataset.ring=ringId;area.setAttribute('aria-busy',String(phase==='loading'));
   copy('setting-title',state==='complete'?'Идеально! Бриллиант\nна своем месте':'А теперь работа ювелира —\nвставьте бриллиант в оправу');
   document.getElementById('setting-description')!.hidden=state==='complete';
@@ -51,7 +49,7 @@ function setRing(id: string, force = false) {
   previous?.remove();
   next.id='ring-game';next.className='ring-frame';next.title=`Установка бриллианта · ${ring.label}`;
   next.width='375';next.height='340';
-  const moduleURL=new URL(variant==='previous'&&ring.previousModule?ring.previousModule:ring.module,document.baseURI);
+  const moduleURL=new URL(ring.module,document.baseURI);
   const hostRevision=new URL(document.baseURI).searchParams.get('v');
   if(hostRevision)moduleURL.searchParams.set('host',hostRevision);
   next.src=moduleURL.href;
@@ -64,10 +62,6 @@ function setRing(id: string, force = false) {
 function reset() {
   // Recreate the selected iframe, including under file:// origin restrictions.
   setRing(ringId,true);
-}
-function setVariant(value:string){
-  if(value!=='previous'&&value!=='new'||value===variant)return;
-  variant=value;setRing(ringId,true);
 }
 window.addEventListener('message',event=>{
   const data=event.data;
@@ -95,11 +89,10 @@ window.addEventListener('message',event=>{
   }
   if(event.source!==window.parent||data?.scope!=='lavivion-suite')return;
   if(data.type==='setting-ring')setRing(data.ringId);
-  if(data.type==='setting-variant')setVariant(data.variant);
   if(data.type==='reset')reset();
   if(data.type==='active')window.dispatchEvent(new CustomEvent('lavivion:host-active',{detail:{active:!!data.active}}));
 });
-Object.assign(window,{lavivionSettingUI:{area,setRing,setVariant,reset,getState:()=>({ringId,state,phase,progress,frame,variant})}});
+Object.assign(window,{lavivionSettingUI:{area,setRing,reset,getState:()=>({ringId,state,phase,progress,frame})}});
 document.getElementById('setting-back')!.addEventListener('click',()=>window.parent.postMessage({scope:'lavivion-suite',type:'go',game:'polish'},'*'));
 document.getElementById('setting-next')!.addEventListener('click',()=>{
   if(state!=='complete')return;

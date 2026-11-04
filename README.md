@@ -111,3 +111,22 @@ remain original. Previous and the other fifteen sequences are unchanged.
 Setting revision: 13-20261028-11; main edition stays v13. Mobile gesture
 protection from revision 10 remains in all setting modules and polishing.
 Polishing remains revision 13-20261028-10 and Final 13-20261028-5.
+
+## Complete client collection · 2026-11-04
+
+Edition remains v13; setting and final revision 13-20261104-1. All sixteen
+mobile setting sequences and final viewers now use the selected client preset:
+original v12 metal, inner environment, small stones and OV/PR; BR hero dark
+accents and EM hero variant B, with the original fast shader and IOR 2.42.
+All GLB bytes are preserved. Setting frames and trajectory metadata are shipped
+together: 127 logical / 121 unique 750×680 RGB WebP frames per product.
+The visible admin ring selectors cover all sixteen products in Setting and
+Final; the former Previous/New angle comparison is retired. Desktop insertion
+is not integrated. Only the selected setting or GLB viewer loads.
+
+Final uses the prepared external viewer API, with no minified-HTML adaptation
+or duplicate motion wrapper. Switching ring explicitly disposes the previous
+WebGL context. The original camera, local-Y turn, two-second inspection pause,
+1100 ms return, compact scrolling and fixed 1500-pixel PNG export are retained.
+Mining and polishing artwork/logic remain unchanged. The publication workflow
+is unchanged and keeps read-only repository access.

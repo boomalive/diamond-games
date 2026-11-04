@@ -460,6 +460,147 @@
           "sha256": "6d27365634cc4c241c0dd2e42c26fcf9bb81a40e2e91da6ef3ad57db99bf00e9"
         }
       ]
+    },
+    {
+      "file": "client-collection-v13-20261104.zip",
+      "sha256": "18b090bcb3cecd10a07daf639ed260eb7644398352b751bdaf6764ab3853391f",
+      "parts": [
+        {
+          "file": "packages/client-collection-v13-20261104-001.bin",
+          "bytes": 2097152,
+          "sha256": "7fec26a8c52bbe8e5a2d77b108be3c972170a79afa7d74d2b8b78bba66b44eaa"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-002.bin",
+          "bytes": 2097152,
+          "sha256": "4e6dfc4c708625bf7b25d65ac8608a50c9d86956dbb006b1de2a88c16a05c044"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-003.bin",
+          "bytes": 2097152,
+          "sha256": "40713a5e8a0040b5c3f2990625dbfe2d1095a58cb0358487b9f0dcbe4b09b291"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-004.bin",
+          "bytes": 2097152,
+          "sha256": "db13610f40f04d602f4c05904519df707bec78c807ca606c8e5397ad62feb787"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-005.bin",
+          "bytes": 2097152,
+          "sha256": "5c094c309926e0eeb9f864682c1dd622dc84d3f8baee4170825687766e5b7dcc"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-006.bin",
+          "bytes": 2097152,
+          "sha256": "60ae9e9b43cb541e2988f82306c07dad61e614b651d5732b990550ba2632be86"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-007.bin",
+          "bytes": 2097152,
+          "sha256": "8cb570539826d271f0bd60fed1bc0420b783781d8ad92f025b5814842076096f"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-008.bin",
+          "bytes": 2097152,
+          "sha256": "d1f1b3f903ee798d8fb1d3ae30a3fd6b693695d46e3dd8300bee0dccb55882fa"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-009.bin",
+          "bytes": 2097152,
+          "sha256": "7e45ef07ffa3f382a31f23406318a114ae0c3e46721777ca336863fa1b85defb"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-010.bin",
+          "bytes": 2097152,
+          "sha256": "4811c254b60c60162e083fe7a763378e712c7cb2d40694bb39f88fa586442867"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-011.bin",
+          "bytes": 2097152,
+          "sha256": "39177dfd990e066fad29d2582fa9fc170abb3b83ef422dd3de0d321f275d9817"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-012.bin",
+          "bytes": 2097152,
+          "sha256": "626df6ac73b940c6c07100bcf8e39f4f5718fa1c929b56c154f17f4e41a1e6fe"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-013.bin",
+          "bytes": 2097152,
+          "sha256": "f28c29b08ccc5c2460cad2623c4ef7caafa692dda73ce9a8d8199f4a6377e2fe"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-014.bin",
+          "bytes": 2097152,
+          "sha256": "f44055cc257f4edd48622ed6a86665dc2aa518b82e7cc23dbe1e768b1ed0f2f2"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-015.bin",
+          "bytes": 2097152,
+          "sha256": "1ed4952a6f9b9f025f1b4e531136ae1c851cd40d91d2055a9e5038c35478bf36"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-016.bin",
+          "bytes": 2097152,
+          "sha256": "500f1a1445fcec00aecb7df52aff01aaa45e29f7be37eef2b25b7c8fe888e23b"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-017.bin",
+          "bytes": 2097152,
+          "sha256": "0db8b2ad854d485a43a6736acafd55000f2a80b970bbb5d84186df586ff8df43"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-018.bin",
+          "bytes": 2097152,
+          "sha256": "cb0ca99fce8d7e4cfaaad4fe4f41325fa3a2534b6982afefcef053815f3c3a30"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-019.bin",
+          "bytes": 2097152,
+          "sha256": "acb647ba6bbbd43f86bfc4c0d6c5dd01bfa85b68b8a70b83311907a8b8277c57"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-020.bin",
+          "bytes": 2097152,
+          "sha256": "870f2749f0b18e0d6dc2e2fa6ace092e5a158f0c4a6a932ac0da80d4bd91c769"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-021.bin",
+          "bytes": 2097152,
+          "sha256": "4996920f75a9ac2be99fb8ab421201680f7dc26c58eca18c17c9352f04087775"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-022.bin",
+          "bytes": 2097152,
+          "sha256": "4f32307d9713ed3751f7560bc5093a48336791eb5fe050f23cbd252907e8cfaf"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-023.bin",
+          "bytes": 2097152,
+          "sha256": "27713928109e94748ddbc40fe74e943ff97bc763e9b7f09d721f99ff0bb5860a"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-024.bin",
+          "bytes": 2097152,
+          "sha256": "74aec08526cea4992459737e08a174b1f2cf431f081c47a0815788def648cee8"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-025.bin",
+          "bytes": 2097152,
+          "sha256": "11027c2b7495650ed531643c83daad5c76bbfe602512d977fdd604c04ad9d8ba"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-026.bin",
+          "bytes": 2097152,
+          "sha256": "e82557435a118fdde9eb0dede3ae5c916863c14d908ee36053f43829fae0f830"
+        },
+        {
+          "file": "packages/client-collection-v13-20261104-027.bin",
+          "bytes": 946639,
+          "sha256": "f275e06bee14d2ae7df01db64f47ebc1a6426e60067a8db213705615e96c8410"
+        }
+      ]
     }
   ]
 }

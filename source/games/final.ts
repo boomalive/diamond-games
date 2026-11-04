@@ -25,7 +25,15 @@ function setRing(id:string){
  ringId=id;ready=false;download.disabled=true;area.setAttribute('aria-busy','true');
  document.getElementById('final-cut')!.textContent=ring.cut;document.getElementById('final-mount')!.textContent=ring.mount;
  const next=document.createElement('iframe');next.id='final-model';next.title=`Готовое кольцо · ${ringId}`;next.src=new URL(ring.url,document.baseURI).href;
- const previous=modelFrame;modelFrame=next;previous?.remove();area.replaceChildren(next);next.addEventListener('load',tellActive);
+ const previous=modelFrame;modelFrame=next;
+ if(previous){
+  try{
+   const old=previous.contentWindow as (Window&{ringViewer?:{dispose?:()=>void}})|null;
+   old?.ringViewer?.dispose?.();
+  }catch{/* Removing an inaccessible frame still releases its document. */}
+  previous.remove();
+ }
+ area.replaceChildren(next);next.addEventListener('load',tellActive);
  document.getElementById('final-page')!.dataset.ring=ringId;
  window.parent.postMessage({scope:'lavivion-suite',type:'final-ui-state',ringId},'*');
 }

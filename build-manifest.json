@@ -606,6 +606,123 @@
       "file": "packages/admin-selection-v13-20261104.zip",
       "bytes": 38187,
       "sha256": "b43ff2dab21bf1d1171a35d911a66b1ff2ebfce13a6896f449dac6343f973e4e"
+    },
+    {
+      "file": "packages/rings-2x-v1.zip",
+      "bytes": 44932911,
+      "sha256": "00f232b5424ac9b6f73dd15b9d5a524d79f3ccc41f17a3a76be8b7e005846fc8",
+      "parts": [
+        {
+          "file": "packages/rings-2x-v1-001.bin",
+          "bytes": 2097152,
+          "sha256": "85c3d030907b3a15bca172e7dd0f70b34c8d26e72dbdc3473c62cb92de26a60d"
+        },
+        {
+          "file": "packages/rings-2x-v1-002.bin",
+          "bytes": 2097152,
+          "sha256": "3f52061ddb2f027ea5bfb3c4de8b2660ad09fabc18415135c785c9e50d476b37"
+        },
+        {
+          "file": "packages/rings-2x-v1-003.bin",
+          "bytes": 2097152,
+          "sha256": "df9846364521f1a7d0b8b4257b455b723a4e864353a2be68b96f57a1becabafb"
+        },
+        {
+          "file": "packages/rings-2x-v1-004.bin",
+          "bytes": 2097152,
+          "sha256": "c80548f26e2fa26f0bb6859e7d8a2989b9244f9532d29f24d075a1ba508fa34a"
+        },
+        {
+          "file": "packages/rings-2x-v1-005.bin",
+          "bytes": 2097152,
+          "sha256": "65c04dd844ac4d871a8f8689f813f29f8dcb7842371a4de77d288258015ba58e"
+        },
+        {
+          "file": "packages/rings-2x-v1-006.bin",
+          "bytes": 2097152,
+          "sha256": "c70e11c11695c0321c585b58cc5fd5620e307c9226276cc9970d898c3bcfacba"
+        },
+        {
+          "file": "packages/rings-2x-v1-007.bin",
+          "bytes": 2097152,
+          "sha256": "8692d772206f63971840d01a2663126e3d4f3af57eca447a0cd6bb35eff459d1"
+        },
+        {
+          "file": "packages/rings-2x-v1-008.bin",
+          "bytes": 2097152,
+          "sha256": "54b44cb8e5ab9d52f42dc274fb5f84d02e132be836b039b17bf2ae9649f40c4b"
+        },
+        {
+          "file": "packages/rings-2x-v1-009.bin",
+          "bytes": 2097152,
+          "sha256": "d1f508f333fa2ea64afdad31ff098872383dbcd634b331517cc0a1ac9a2b3a21"
+        },
+        {
+          "file": "packages/rings-2x-v1-010.bin",
+          "bytes": 2097152,
+          "sha256": "de51363436baf7d439307f28cf9f08c217eda6677285e9f7ca5cdfc74dfeb896"
+        },
+        {
+          "file": "packages/rings-2x-v1-011.bin",
+          "bytes": 2097152,
+          "sha256": "031d608e2555e97ec02d03adf6430b5a3466091c703eea5671a8bfa06e225696"
+        },
+        {
+          "file": "packages/rings-2x-v1-012.bin",
+          "bytes": 2097152,
+          "sha256": "2d3d9e6af56f007a3b1174f907a5edcffaea731252f688eedef5ba847af1f615"
+        },
+        {
+          "file": "packages/rings-2x-v1-013.bin",
+          "bytes": 2097152,
+          "sha256": "04b949015836380a68a0dbf2c3a8089c45653d04303b4ade60dbecdaa54f4cc6"
+        },
+        {
+          "file": "packages/rings-2x-v1-014.bin",
+          "bytes": 2097152,
+          "sha256": "0a510acc253b9268b85f67a683c380a7d8e566022efecc008bc4bd44a83be780"
+        },
+        {
+          "file": "packages/rings-2x-v1-015.bin",
+          "bytes": 2097152,
+          "sha256": "af62ef506d2af9b86319db949e7427dd9a257353ffdb0665f4d3d6717ebd8bfd"
+        },
+        {
+          "file": "packages/rings-2x-v1-016.bin",
+          "bytes": 2097152,
+          "sha256": "64c44c3a16f5ab334d2b1649d8cfc980350c2ba333904f998e19e8f4ff47da08"
+        },
+        {
+          "file": "packages/rings-2x-v1-017.bin",
+          "bytes": 2097152,
+          "sha256": "f43df7cb60cd7ce63cbace3234ec11fd4a0821183da00b25333490884ff1b3df"
+        },
+        {
+          "file": "packages/rings-2x-v1-018.bin",
+          "bytes": 2097152,
+          "sha256": "56c2f2e290a2900ea0fef9960cd0726629f8a81e26f9df74d3df74d19a736428"
+        },
+        {
+          "file": "packages/rings-2x-v1-019.bin",
+          "bytes": 2097152,
+          "sha256": "c5592de44dfcded8055991644f13e982b6e3567f0f7242dbf27ad242e9dd3613"
+        },
+        {
+          "file": "packages/rings-2x-v1-020.bin",
+          "bytes": 2097152,
+          "sha256": "1218bab7aa58842d2a7941274535da4e317d94b2fcf2bd532b0f9ac35c974981"
+        },
+        {
+          "file": "packages/rings-2x-v1-021.bin",
+          "bytes": 2097152,
+          "sha256": "8308e90f23a9205fcd2812a76ce865e51f29d3b1e0f23291e23640dfc0297211"
+        },
+        {
+          "file": "packages/rings-2x-v1-022.bin",
+          "bytes": 892719,
+          "sha256": "f9e3229c3e59d860ab40e6f553884922c0d8ea2271c92e70a2fe12b81aaa619b"
+        }
+      ]
     }
   ]
 }

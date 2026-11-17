@@ -723,6 +723,15 @@
           "sha256": "f9e3229c3e59d860ab40e6f553884922c0d8ea2271c92e70a2fe12b81aaa619b"
         }
       ]
+    },
+    {
+      "file": "packages/rings-2x-v2-pave.zip",
+      "bytes": 191369,
+      "sha256": "b3fa35626b5a29806aa765399fa204cc4ec51825e2880199b0f799d0944c394f",
+      "base_directory": {
+        "source": "rings-2x",
+        "destination": "rings-2x-v2"
+      }
     }
   ]
 }

@@ -732,6 +732,15 @@
         "source": "rings-2x",
         "destination": "rings-2x-v2"
       }
+    },
+    {
+      "file": "packages/rings-2x-v3-inner-edge.zip",
+      "bytes": 188487,
+      "sha256": "55f457d23ad8db597dd0e9f849f1f2d5c7b9bbc25c0dac2d44412271b9cdefaf",
+      "base_directory": {
+        "source": "rings-2x-v2",
+        "destination": "rings-2x-v3"
+      }
     }
   ]
 }

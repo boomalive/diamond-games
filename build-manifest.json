@@ -741,6 +741,15 @@
         "source": "rings-2x-v2",
         "destination": "rings-2x-v3"
       }
+    },
+    {
+      "file": "packages/rings-2x-v4-bevel.zip",
+      "bytes": 191892,
+      "sha256": "0ffcb44b80bdd9bec9e392ae64478f7b1f13353506ea57dc40745a07fc45d2aa",
+      "base_directory": {
+        "source": "rings-2x-v3",
+        "destination": "rings-2x-v4"
+      }
     }
   ]
 }
